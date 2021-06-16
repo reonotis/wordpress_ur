@@ -645,8 +645,8 @@ if ( ! function_exists( 'onepress_custom_inline_style' ) ) {
 				.pirate-forms-submit-button, .pirate-forms-submit-button:hover, input[type="reset"], input[type="submit"], input[type="submit"], .pirate-forms-submit-button,
 				.contact-form div.wpforms-container-full .wpforms-form .wpforms-submit,
 				.contact-form div.wpforms-container-full .wpforms-form .wpforms-submit:hover,
-				.nav-links a:hover, .nav-links a.current, 
-				.nav-links .page-numbers:hover, 
+				.nav-links a:hover, .nav-links a.current,
+				.nav-links .page-numbers:hover,
 				.nav-links .page-numbers.current
 				{
 					background: #<?php echo $primary; ?>;
@@ -1511,8 +1511,8 @@ if ( ! function_exists( 'onepress_footer_site_info' ) ) {
 	function onepress_footer_site_info() {
 		?>
 		<?php printf( esc_html__( 'Copyright %1$s %2$s %3$s', 'onepress' ), '&copy;', esc_attr( date( 'Y' ) ), esc_attr( get_bloginfo() ) ); ?>
-		<span class="sep"> &ndash; </span>
-		<?php printf( esc_html__( '%1$s theme by %2$s', 'onepress' ), '<a href="' . esc_url( 'https://www.famethemes.com/themes/onepress', 'onepress' ) . '">OnePress</a>', 'FameThemes' ); ?>
+		<!-- <span class="sep"> &ndash; </span> -->
+		<!-- <?php printf( esc_html__( '%1$s themewwww by %2$s', 'onepress' ), '<a href="' . esc_url( 'https://www.famethemes.com/themes/onepress', 'onepress' ) . '">OnePress</a>', 'FameThemes' ); ?> -->
 		<?php
 	}
 }
@@ -1548,7 +1548,7 @@ function onepress_breadcrumb( $post_id = null ) {
             <?php yoast_breadcrumb(); ?>
             </div>
         </div>
-        <?php            
+        <?php
     }
 }
 

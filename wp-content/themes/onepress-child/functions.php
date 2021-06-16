@@ -28,6 +28,7 @@ function show_stylist_list($parameter) {
 
 	$query="SELECT * FROM stylist
             WHERE shop_id = $shop
+            AND status_id = 1
             ";
 	$results = $wpdb->get_results($query);
 
