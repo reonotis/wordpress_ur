@@ -36,7 +36,7 @@ function show_stylist_list($parameter) {
 	$HTML = '<div class="shopStaffs">';
     foreach ($results as $result){
         $HTML .= '<div class="staffItem scroll_animation">';
-            $HTML .= '<div class="listIMG"><img src="https://ur-hairmake.com/img/staff/S__46334114.jpg" class=" alt="" ></div>';
+            $HTML .= '<div class="listIMG"><img src="'. $result->img_pass .'" class=" alt="" ></div>';
             $HTML .= '<div class="staffName">'. $result->display_name .'</div>';
             // $HTML .= '<hr class="staffHR">';
             $HTML .= '<div class="staffCatchCopy">キャッチコピー</div>';
