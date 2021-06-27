@@ -1,11 +1,11 @@
 <?php
 
+
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
 }
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-
 
 
 
@@ -17,11 +17,7 @@ include 'setting_stylist.php';
 
 
 // ショートコード
-function hello_func() {
-    return "hello shortcode!";
-}
-
-function show_stylist_list($parameter) {
+function show_stylists_list($parameter) {
 	// パラメータのデフォルトと引数の設定
 	$parameter = shortcode_atts(array(
 		"shop" => NULL,
@@ -32,21 +28,25 @@ function show_stylist_list($parameter) {
 	// データの取得
 	global $wpdb;
 
-	$query="SELECT * FROM stylist
-            WHERE shop_id = $shop
-            AND display_flg = 1
+	$query="SELECT stylist.*, shop.shop_code
+            FROM stylist
+            LEFT JOIN shop ON shop.id = stylist.shop_id
+            WHERE stylist.shop_id = $shop
+            AND stylist.display_flg = 1
+            ORDER BY stylist.display_rank
             ";
 	$results = $wpdb->get_results($query);
 
 	$HTML = '' ;
 	$HTML = '<div class="shopStaffs">';
     foreach ($results as $result){
-        $HTML .= '<div class="staffItem scroll_animation">';
-            $HTML .= '<div class="listIMG"><img src="'. wp_get_attachment_url($result->img_pass) .'" class=" alt="" ></div>';
-
+        $HTML .= '<div class="staffItem">';
+            $HTML .= '<a href="./staff?id='. $result->id .'" >';
+                $HTML .= '<div class="listIMG scroll_animation scroll_animation_type_'. $result->shop_code .'"><img src="'. wp_get_attachment_url($result->img_pass) .'" class="" alt="" ></div>';
+            $HTML .= '</a>';
             $HTML .= '<div class="staffName">'. $result->display_name .'</div>';
             // $HTML .= '<hr class="staffHR">';
-            $HTML .= '<div class="staffCatchCopy">キャッチコピー</div>';
+            $HTML .= '<div class="staffCatchCopy">'. $result->catch_copy .'</div>';
         $HTML .= '</div>';
     }
     $HTML .= '</div>';
@@ -54,12 +54,82 @@ function show_stylist_list($parameter) {
     return $HTML;
 
 }
-add_shortcode('show_stylist', 'show_stylist_list');
+add_shortcode('show_stylists_list', 'show_stylists_list');
+
+// スタイリストを表示する。
+function show_stylist() {
+    // パラメーター「id」の値を取得
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+    }else{
+        $id = 1;
+    }
+    $id = htmlspecialchars($id, ENT_QUOTES);
+
+    global $wpdb;
+	$query="SELECT * FROM stylist
+            WHERE id = $id ";
+	$result = $wpdb->get_row($query);
+
+    if(!$result){
+        return "不正なパラメータが渡されました。";
+    }
+
+	$HTML = '' ;
+	$HTML = '<div class="stylistContainer">';
+        $HTML .= '<div class="stylistContents">';
+            $HTML .= '<div class="stylistImgContent scroll_animation">';
+                $HTML .= '<img src="'. wp_get_attachment_url($result->img_pass) .'" class=" alt="" >';
+            $HTML .= '</div>';
+            $HTML .= '<div class="stylistContent">';
+                $HTML .= '<div class="stylistContentName scroll_animation">'.$result->display_name. '</div>';
+                $HTML .= '<div class="stylistContentRead">'.$result->display_read. '</div>';
+                $HTML .= '<div class="stylistContentCatchCopy">';
+                    $HTML .= $result->catch_copy;
+                $HTML .= '</div>';
+                $HTML .= '<div class="stylistContentComment">';
+                    $HTML .= '';
+                $HTML .= '</div>';
+            $HTML .= '</div>';
+        $HTML .= '</div>';
+	$HTML .= '</div>';
+
+    return $HTML;
+}
+add_shortcode('show_stylist', 'show_stylist');
+
+
+
+
+
+
+
+
+function set_shop_name($data){
+    if($data->shop_id==1){
+        $data->shop_name = "castle";
+    }
+    if($data->shop_id==2){
+        $data->shop_name = "delta";
+    }
+    if($data->shop_id==3){
+        $data->shop_name = "arche";
+    }
+    return $data;
+}
+
+
+
+
+
+
+
+
 
 
 
 function load_media_files() {
-wp_enqueue_media();
+    wp_enqueue_media();
 }
 add_action( 'admin_enqueue_scripts', 'load_media_files' );
 

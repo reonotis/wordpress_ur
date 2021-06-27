@@ -3,3 +3,213 @@ Theme Name:onepress-child
 Template:onepress
 */
 
+
+/* スタイリスト  */
+.shopStaffs{
+    width: 100%;
+    margin: 10px auto 10px;
+    padding   : 60px 40px ;
+    text-align: center ;
+    border: solid .5px #aaa;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 1024px) {
+    .shopStaffs{
+        padding   : 50px 10px ;
+    }
+}
+.staffItem{
+    position   : relative ;
+    width      : 150px ;
+    margin     : 10px 15px 50px;
+    overflow   : hidden ;
+    background : #fff ;
+    vertical-align: middle;
+}
+@media screen and (max-width: 1024px) {
+    .staffItem{
+        width      : 100px ;
+        margin     : 10px 5px 20px;
+    }
+}
+.listIMG{
+    width      : 150px ;
+    height     : 190px ;
+}
+.listIMG img {
+    width      : 150px ;
+    height     : 190px ;
+    object-fit : cover ;
+}
+.staffName{
+    position   : relative;
+    top        : -10px ;
+    background : #111 ;
+    color      : #fff ;
+    width      : 90% ;
+}
+@media screen and (max-width: 1024px) {
+    .listIMG{
+        width      : 100px ;
+        height     : 130px ;
+    }
+    .listIMG img {
+        width      : 100px ;
+        height     : 130px ;
+    }
+    .staffName{
+        width      : 100% ;
+    }
+}
+.staffCatchCopy{
+    position   : relative ;
+    top        : -5px ;
+}
+
+/* スタイリスト個人ページ */
+.stylistContainer{
+    width :100%;
+}
+.stylistContents{
+    width :100%;
+    max-width :1000px;
+    margin :0 auto;
+    padding :60px 0 80px;
+    position:relative;
+    display: flex;
+}
+.stylistContents::after{
+    content:"";
+    position:absolute;
+    top :0px;
+    right:0;
+    background :rgba(170, 170, 170, 0.26);
+    height :100%;
+    width :calc(100% - 200px) ;
+    z-index :0;
+}
+
+.stylistImgContent {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    z-index :10;
+    overflow: hidden;
+}
+.stylistImgContent >img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+.stylistContent{
+    position:relative;
+    width :calc(100% - 500px);
+    margin : 0 auto;
+    z-index :20;
+}
+.stylistContentName{
+    position: relative;
+    margin :50px 0 0;
+    padding :20px;
+    display: inline-block;
+    min-width :300px;
+    left :-100px;
+    background :#111;
+    color :#fff;
+    font-size:2em;
+    font-weight: 800;
+}
+.stylistContentRead{
+    position: relative;
+    top :-10px;
+    font-size:1.4em;
+    display: inline-block;
+    min-width :300px;
+    border-bottom :solid 1px #aaa;
+}
+
+.stylistContentCatchCopy{
+    margin :5px 0;
+    font-size:1.5em;
+    font-weight: 700;
+}
+
+.stylistContentComment{
+    margin :30px 0;
+    font-size:1.2em;
+}
+
+
+
+
+
+
+
+
+
+/* スクロールした時のアニメーション  */
+.scroll_animation{
+    overflow : hidden ;
+    transition :0.5s;
+}
+.scroll_animation_mask{
+    width      : 220% ;
+    height     : 100% ;
+    position   : absolute ;
+    top        : 0 ;
+    left       : 0 ;
+    transform  : translate(-50%, 0);
+    display    : flex ;
+    justify-content : flex-start;
+    align-items : stretch ;
+    z-index    : 10 ;
+    background : #fff ;
+    transition  : transform ;
+    transition-duration : 700ms;		/* アニメーションの時間 */
+    transition-delay : 50ms ;			/* アニメーション開始までの時間 */
+    transition-timing-function : ease-in-out ;
+}
+.scroll_animation_inner{
+    width      : 49% ;
+    background : #111 ;
+}
+.active.scroll_animation{
+    opacity:1;
+}
+.active .scroll_animation_mask{
+    transform  : translate(51%, 0);
+}
+
+/* アニメーションのタイプ別  */
+.scroll_animation_type1 .scroll_animation_mask{
+    background : #C9E6C7 ;
+}
+.scroll_animation_type1 .scroll_animation_inner{
+    background : #111 ;
+}
+.scroll_animation_type2 .scroll_animation_mask{
+    background : #C9E6C7 ;
+}
+.scroll_animation_type2 .scroll_animation_inner{
+    background : GREEN ;
+}
+.scroll_animation_type_castle .scroll_animation_inner{
+    background : #f3cf2d ;
+}
+
+.scroll_animation_type_delta .scroll_animation_inner{
+    background : #7eb9f0 ;
+}
+
+
+
+
+.scroll_animation_fade_in_up{
+    top      : 150px;
+    transition : 1s;
+}
+.active.scroll_animation_fade_in_up{
+    top     : 0px ;
+}
