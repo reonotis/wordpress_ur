@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-28 15:42:11+0000\n"
+"PO-Revision-Date: 2021-06-26 13:25:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Elementor Website Builder - Stable (latest release)\n"
+
+#: includes/settings/settings.php:471
+msgid "API Key"
+msgstr "API キー"
+
+#: modules/compatibility-tag/compatibility-tag-report.php:152
+msgid "Compatibility unknown"
+msgstr "互換性不明"
+
+#: modules/compatibility-tag/compatibility-tag-report.php:150
+msgid "Incompatible"
+msgstr "互換性なし"
+
+#: modules/compatibility-tag/compatibility-tag-report.php:149
+msgid "Compatible"
+msgstr "互換性あり"
 
 #: includes/widgets/common.php:639
 msgid "Round"
@@ -95,17 +111,25 @@ msgstr "スケッチ"
 msgid "Flower"
 msgstr "花"
 
-#: includes/widgets/toggle.php:230 includes/widgets/accordion.php:226
+#: includes/widgets/accordion.php:226 includes/widgets/toggle.php:230
 msgid "FAQ Schema"
 msgstr "FAQ スキーマ"
 
-#: includes/settings/settings.php:515
+#: includes/settings/settings.php:531
 msgid "Optional"
 msgstr "オプション"
 
-#: includes/settings/settings.php:513
+#: includes/settings/settings.php:529
 msgid "Swap"
 msgstr "スワップ"
+
+#: core/experiments/manager.php:255
+msgid "Import Export Template Kit"
+msgstr "インポートエクスポートテンプレートキット"
+
+#: core/breakpoints/manager.php:179
+msgid "Widescreen"
+msgstr "ワイドスクリーン"
 
 #: core/admin/admin-notices.php:433
 msgid "Using popups on your site?"
@@ -122,6 +146,10 @@ msgstr "WooCommerce をお使いですか ?"
 #: core/app/modules/import-export/module.php:162
 msgid "Template Kits"
 msgstr "テンプレートキット"
+
+#: core/app/modules/import-export/module.php:159
+msgid "Import / Export Kit"
+msgstr "インポート / エクスポートキット"
 
 #: core/app/modules/import-export/module.php:121
 msgid "Start Import"
@@ -228,16 +256,24 @@ msgstr "ファイルが存在しません。もう一度お試しください。
 msgid "There was an error when reading this WXR file"
 msgstr "WXR ファイルを読み込む際にエラーが発生しました。"
 
-#: core/utils/import-export/parsers/wxr-parser-xml.php:189
+#: core/utils/import-export/parsers/wxr-parser-regex.php:146
 #: core/utils/import-export/parsers/wxr-parser-simple-xml.php:69
 #: core/utils/import-export/parsers/wxr-parser-simple-xml.php:75
-#: core/utils/import-export/parsers/wxr-parser-regex.php:146
+#: core/utils/import-export/parsers/wxr-parser-xml.php:189
 msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
 msgstr "これは WXR ファイルではないようです。WXR のバージョン番号がない、または無効です"
+
+#: modules/shapes/widgets/text-path.php:464
+msgid "Path"
+msgstr "パス"
 
 #: modules/shapes/widgets/text-path.php:324
 msgid "Word Spacing"
 msgstr "文字間隔"
+
+#: modules/shapes/widgets/text-path.php:195
+msgid "Show Path"
+msgstr "パスを表示"
 
 #: modules/shapes/widgets/text-path.php:183
 msgid "LTR"
@@ -258,6 +294,10 @@ msgstr "SVG"
 #: modules/shapes/module.php:19
 msgid "Arc"
 msgstr "アーク"
+
+#: modules/shapes/module.php:18
+msgid "Wave"
+msgstr "波"
 
 #: includes/controls/groups/background.php:624
 msgid "Only works for YouTube videos."
@@ -394,11 +434,12 @@ msgstr "あなたのビジネスのマーケティングキャンペーンのた
 msgid "Landing Pages"
 msgstr "ランディングページ"
 
-#: modules/landing-pages/module.php:193 modules/landing-pages/module.php:252
 #: modules/landing-pages/documents/landing-page.php:42
+#: modules/landing-pages/module.php:193 modules/landing-pages/module.php:252
 msgid "Landing Page"
 msgstr "ランディングページ"
 
+#: modules/compatibility-tag/compatibility-tag-report.php:103
 #: modules/compatibility-tag/views/plugin-update-message-compatibility.php:57
 msgid "Unknown"
 msgstr "不明"
@@ -476,6 +517,10 @@ msgstr "グローバルカラー"
 #: core/kits/documents/tabs/settings-layout.php:286
 msgid "Breakpoint"
 msgstr "ブレークポイント"
+
+#: modules/compatibility-tag/compatibility-tag-report.php:153
+msgid "Error"
+msgstr "エラー"
 
 #: includes/widgets/social-icons.php:448
 msgid "Rows Gap"
@@ -606,7 +651,7 @@ msgstr "完全ガイドを見る"
 msgid "Get introduced to Elementor by watching our \"Getting Started\" video series. It will guide you through the steps needed to create your website. Then click to create your first page."
 msgstr "\"Getting Started\" 動画シリーズで Elementor の紹介をご覧ください。この動画シリーズでは、サイトを作成するために必要なステップをご案内します。そして、クリックして最初のページを作成しましょう。"
 
-#: includes/settings/settings.php:494 assets/js/editor.js:26662
+#: includes/settings/settings.php:510 assets/js/editor.js:26662
 msgid "Enable Unfiltered File Uploads"
 msgstr "フィルタリングされていないファイルのアップロードを有効化"
 
@@ -687,11 +732,11 @@ msgstr "ツールバーのアイコンサイズ"
 msgid "Alt"
 msgstr "代替テキスト (alt)"
 
-#: includes/frontend.php:1209 core/kits/documents/tabs/settings-lightbox.php:86
+#: core/kits/documents/tabs/settings-lightbox.php:86 includes/frontend.php:1209
 msgid "Share"
 msgstr "シェア"
 
-#: includes/frontend.php:1207 core/kits/documents/tabs/settings-lightbox.php:66
+#: core/kits/documents/tabs/settings-lightbox.php:66 includes/frontend.php:1207
 msgid "Fullscreen"
 msgstr "フルスクリーン"
 
@@ -762,16 +807,16 @@ msgstr "%s 動画プレーヤー"
 msgid "Background Position"
 msgstr "背景位置"
 
-#: includes/widgets/image.php:365 includes/controls/groups/background.php:717
+#: includes/controls/groups/background.php:717 includes/widgets/image.php:365
 msgid "Contain"
 msgstr "含む"
 
-#: includes/widgets/image.php:364 includes/controls/groups/background.php:716
+#: includes/controls/groups/background.php:716 includes/widgets/image.php:364
 msgid "Cover"
 msgstr "カバー"
 
-#: includes/widgets/social-icons.php:276
 #: includes/controls/groups/background.php:715
+#: includes/widgets/social-icons.php:276
 msgid "Auto"
 msgstr "自動"
 
@@ -1003,7 +1048,7 @@ msgstr "Ken Burns エフェクト"
 msgid "This cover image will replace the background video in case that the video could not be loaded."
 msgstr "動画を読み込めなかった場合、このカバー画像に置き換わります。"
 
-#: includes/widgets/video.php:299 includes/controls/groups/background.php:608
+#: includes/controls/groups/background.php:608 includes/widgets/video.php:299
 msgid "Play On Mobile"
 msgstr "モバイルで再生"
 
@@ -1027,8 +1072,8 @@ msgstr "投稿"
 msgid "File Path: %s"
 msgstr "ファイルパス: %s"
 
-#: includes/editor-templates/panel.php:27
-#: includes/editor-templates/panel.php:159 core/kits/views/panel.php:12
+#: core/kits/views/panel.php:12 includes/editor-templates/panel.php:27
+#: includes/editor-templates/panel.php:159
 msgid "Need Help"
 msgstr "お困りですか ?"
 
@@ -1061,15 +1106,15 @@ msgstr "ベータテスターになると、Elementor のテストバージョ�
 msgid "Get Beta Updates"
 msgstr "ベータアップデートを取得"
 
-#: includes/settings/settings.php:502
+#: includes/settings/settings.php:518
 msgid "We recommend you only enable this feature if you understand the security risks involved."
 msgstr "関連するセキュリティリスクを理解している場合のみ、この機能を有効にすることをお勧めします。"
 
-#: includes/settings/settings.php:502
+#: includes/settings/settings.php:518
 msgid "Elementor will try to sanitize the unfiltered files, removing potential malicious code and scripts."
 msgstr "Elementor はフィルタリングされていないファイルをサニタイズし、潜在的な悪意のあるコードやスクリプトを除去しようとします。"
 
-#: includes/settings/settings.php:502
+#: includes/settings/settings.php:518
 msgid "Please note! Allowing uploads of any files (SVG & JSON included) is a potential security risk."
 msgstr "ご注意ください。任意のファイル (SVG と JSON を含む) のアップロードを許可することは、潜在的なセキュリティリスクです。"
 
@@ -1081,12 +1126,12 @@ msgstr "<a id=\"beta-tester-first-to-know\" href=\"%s\">ここをクリック</a
 msgid "Template not exist."
 msgstr "テンプレートが存在しません。"
 
-#: includes/widgets/common.php:997 includes/elements/section.php:1348
-#: includes/elements/column.php:851
+#: includes/elements/section.php:1348 includes/elements/column.php:851
+#: includes/widgets/common.php:997
 msgid "Responsive visibility will take effect only on preview or live page, and not while editing in Elementor."
 msgstr "レスポンシブ表示はプレビューやライブページでのみ有効で、Elementor での編集中は使えません。"
 
-#: includes/base/widget-base.php:888
+#: includes/base/widget-base.php:908
 msgid "Deprecated"
 msgstr "非推奨"
 
@@ -1217,7 +1262,7 @@ msgstr "絶対"
 msgid "Custom positioning is not considered best practice for responsive web design and should not be used too frequently."
 msgstr "カスタム配置は、レスポンシブ Web デザインのベストプラクティスとはみなされていないため、あまり頻繁に使用しないでください。"
 
-#: includes/widgets/common.php:752 core/experiments/manager.php:243
+#: core/experiments/manager.php:243 includes/widgets/common.php:752
 msgid "Please note!"
 msgstr "ご注意ください。"
 
@@ -1241,8 +1286,8 @@ msgstr "非表示"
 msgid "Overflow"
 msgstr "オーバーフロー"
 
-#: includes/widgets/common.php:194 includes/elements/section.php:1255
-#: includes/elements/column.php:790
+#: includes/elements/section.php:1255 includes/elements/column.php:790
+#: includes/widgets/common.php:194
 msgid "Motion Effects"
 msgstr "モーション効果"
 
@@ -1260,8 +1305,8 @@ msgstr "均等に配置"
 msgid "Space Around"
 msgstr "周りのスペース"
 
-#: includes/widgets/common.php:723 includes/widgets/image-carousel.php:521
 #: includes/elements/section.php:445 includes/elements/column.php:162
+#: includes/widgets/common.php:723 includes/widgets/image-carousel.php:521
 msgid "Vertical Align"
 msgstr "垂直方向に整列"
 
@@ -1277,7 +1322,7 @@ msgstr "この問題は、おそらくプラグインまたはテーマのいず
 msgid "Note: The ID link ONLY accepts these chars: %s"
 msgstr "注: ID リンクではこれらの文字のみが許可されています: %s"
 
-#: includes/widgets/video.php:201 includes/controls/media.php:179
+#: includes/controls/media.php:179 includes/widgets/video.php:201
 msgid "Choose File"
 msgstr "ファイルを選択"
 
@@ -1305,7 +1350,7 @@ msgstr "続きを読む"
 msgid "Read More"
 msgstr "続きを読む"
 
-#: includes/widgets/google-maps.php:111
+#: includes/widgets/google-maps.php:130
 msgid "Location"
 msgstr "所在地"
 
@@ -1371,15 +1416,15 @@ msgstr "ポップアップビルダーでは、Elementor の素晴らしい機�
 msgid "Get Popup Builder"
 msgstr "ポップアップビルダーを入手"
 
-#: includes/template-library/sources/local.php:1669
 #: includes/settings/settings.php:161
+#: includes/template-library/sources/local.php:1669
 msgid "Popups"
 msgstr "ポップアップ"
 
-#: includes/template-library/sources/local.php:1668
 #: core/common/modules/finder/categories/general.php:68
 #: core/app/modules/site-editor/module.php:31 core/app/app.php:39
-#: core/app/app.php:40 assets/js/editor.js:35580
+#: core/app/app.php:40 includes/template-library/sources/local.php:1668
+#: assets/js/editor.js:35580
 msgid "Theme Builder"
 msgstr "テーマビルダー"
 
@@ -1529,8 +1574,8 @@ msgstr "元に戻す"
 msgid "Type to find anything in Elementor"
 msgstr "入力して Elementor 内を全検索"
 
-#: includes/editor-templates/hotkeys.php:92 assets/js/editor.js:24886
-#: assets/js/common.js:14705
+#: includes/editor-templates/hotkeys.php:92 assets/js/common.js:14705
+#: assets/js/editor.js:24886
 msgid "Finder"
 msgstr "ファインダー"
 
@@ -1567,9 +1612,9 @@ msgstr "正常に切断されました。"
 msgid "Connected Successfully."
 msgstr "正常に接続されました。"
 
+#: core/common/modules/connect/apps/connect.php:11
 #: core/common/modules/connect/admin.php:24
 #: core/common/modules/connect/admin.php:25
-#: core/common/modules/connect/apps/connect.php:11
 msgid "Connect"
 msgstr "連携"
 
@@ -1590,11 +1635,11 @@ msgstr "遅延読み込み"
 msgid "Enter your URL"
 msgstr "URL を入力"
 
-#: includes/widgets/toggle.php:130 includes/widgets/toggle.php:134
-#: includes/widgets/accordion.php:126 includes/widgets/accordion.php:130
-#: includes/widgets/icon-box.php:160 includes/widgets/image-box.php:137
-#: includes/widgets/text-editor.php:114 includes/widgets/tabs.php:129
+#: includes/widgets/icon-box.php:160 includes/widgets/text-editor.php:114
+#: includes/widgets/image-box.php:137 includes/widgets/accordion.php:126
+#: includes/widgets/accordion.php:130 includes/widgets/tabs.php:129
 #: includes/widgets/tabs.php:133 includes/widgets/testimonial.php:101
+#: includes/widgets/toggle.php:130 includes/widgets/toggle.php:134
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
 msgstr "吾輩は猫である。名前はまだない。どこで生れたか頓と見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。"
 
@@ -1633,13 +1678,13 @@ msgstr "空"
 #: includes/editor-templates/hotkeys.php:126
 #: includes/editor-templates/panel.php:69
 #: includes/editor-templates/panel.php:71
-#: includes/editor-templates/navigator.php:12 assets/js/editor.js:19139
-#: assets/js/editor-document.js:18331
+#: includes/editor-templates/navigator.php:12
+#: assets/js/editor-document.js:18331 assets/js/editor.js:19139
 msgid "Navigator"
 msgstr "ナビゲーター"
 
-#: includes/editor-templates/library-layout.php:13
 #: includes/settings/settings.php:249 includes/settings/settings.php:250
+#: includes/editor-templates/library-layout.php:13
 msgid "Skip"
 msgstr "スキップ"
 
@@ -1676,8 +1721,8 @@ msgstr ""
 msgid "Congrats!"
 msgstr "おめでとうございます !"
 
-#: includes/frontend.php:1208 includes/widgets/google-maps.php:128
-#: core/kits/documents/tabs/settings-lightbox.php:76
+#: core/kits/documents/tabs/settings-lightbox.php:76 includes/frontend.php:1208
+#: includes/widgets/google-maps.php:147
 msgid "Zoom"
 msgstr "ズーム"
 
@@ -1729,9 +1774,9 @@ msgstr "アートワーク"
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: includes/managers/elements.php:283
 #: core/common/modules/finder/categories/site.php:26
 #: core/app/modules/site-editor/module.php:32 core/kits/manager.php:316
+#: includes/managers/elements.php:283
 msgid "Site"
 msgstr "サイト"
 
@@ -1739,13 +1784,13 @@ msgstr "サイト"
 msgid "Pro"
 msgstr "プロ版"
 
-#: includes/widgets/heading.php:258 includes/elements/section.php:698
-#: includes/elements/column.php:385
+#: includes/elements/section.php:698 includes/elements/column.php:385
+#: includes/widgets/heading.php:258
 msgid "Blend Mode"
 msgstr "ボタンモード"
 
-#: includes/editor-templates/hotkeys.php:35 assets/js/editor.js:18467
-#: assets/js/editor-document.js:17659
+#: includes/editor-templates/hotkeys.php:35 assets/js/editor-document.js:17659
+#: assets/js/editor.js:18467
 msgid "Copy"
 msgstr "コピー"
 
@@ -1778,19 +1823,19 @@ msgctxt "Filter Control"
 msgid "Blur"
 msgstr "ぼかし"
 
-#: includes/widgets/video.php:257 includes/controls/groups/background.php:588
+#: includes/controls/groups/background.php:588 includes/widgets/video.php:257
 msgid "Specify an end time (in seconds)"
 msgstr "終了時間を秒数で指定します。"
 
-#: includes/widgets/video.php:255 includes/controls/groups/background.php:586
+#: includes/controls/groups/background.php:586 includes/widgets/video.php:255
 msgid "End Time"
 msgstr "終了時間"
 
-#: includes/widgets/video.php:247 includes/controls/groups/background.php:576
+#: includes/controls/groups/background.php:576 includes/widgets/video.php:247
 msgid "Specify a start time (in seconds)"
 msgstr "開始時間を秒数で指定します。"
 
-#: includes/widgets/video.php:245 includes/controls/groups/background.php:574
+#: includes/controls/groups/background.php:574 includes/widgets/video.php:245
 msgid "Start Time"
 msgstr "開始時間"
 
@@ -1815,15 +1860,15 @@ msgstr "WordPress エディターに戻る"
 msgid "Elementor %s"
 msgstr "Elementor %s"
 
-#. translators: %s: Template type label.
 #. translators: %s the title of the post type
-#: includes/template-library/sources/local.php:1356
+#. translators: %s: Template type label.
 #: core/common/modules/finder/categories/create.php:62
+#: includes/template-library/sources/local.php:1356
 msgid "Add New %s"
 msgstr "新規%sを追加"
 
 #. translators: %d: Number of rows
-#: includes/utils.php:176
+#: includes/utils.php:165
 msgid "%d row affected."
 msgid_plural "%d rows affected."
 msgstr[0] "％d行に反映されました。"
@@ -1838,17 +1883,17 @@ msgctxt "Page Template"
 msgid "Elementor Canvas"
 msgstr "Elementor キャンバス"
 
-#: includes/widgets/image-box.php:312 includes/widgets/image-box.php:366
-#: includes/widgets/image.php:393 includes/widgets/image.php:427
-#: includes/elements/section.php:652 includes/elements/section.php:753
-#: includes/elements/column.php:354 includes/elements/column.php:425
 #: core/kits/documents/tabs/theme-style-images.php:95
 #: core/kits/documents/tabs/theme-style-images.php:166
+#: includes/elements/section.php:652 includes/elements/section.php:753
+#: includes/elements/column.php:354 includes/elements/column.php:425
+#: includes/widgets/image-box.php:312 includes/widgets/image-box.php:366
+#: includes/widgets/image.php:393 includes/widgets/image.php:427
 msgid "Opacity"
 msgstr "不透明度"
 
-#: includes/plugin.php:481 includes/plugin.php:494 core/base/module.php:130
-#: core/base/module.php:143
+#: core/base/module.php:130 core/base/module.php:143 includes/plugin.php:481
+#: includes/plugin.php:494
 msgid "Something went wrong."
 msgstr "何かがうまくいかなかったようです。"
 
@@ -1857,9 +1902,9 @@ msgid "Max Width"
 msgstr "幅の上限"
 
 #: includes/widgets/common.php:535 includes/widgets/common.php:765
+#: includes/widgets/divider.php:736 includes/widgets/divider.php:876
 #: includes/widgets/image-carousel.php:397
 #: includes/widgets/image-carousel.php:460 includes/widgets/tabs.php:152
-#: includes/widgets/divider.php:736 includes/widgets/divider.php:876
 msgid "Position"
 msgstr "位置"
 
@@ -1985,8 +2030,8 @@ msgid "Groove"
 msgstr "溝"
 
 #. translators: %s: Document title
-#: includes/editor-templates/panel.php:67 core/base/document.php:967
-#: core/settings/page/model.php:126
+#: core/settings/page/model.php:126 core/base/document.php:967
+#: includes/editor-templates/panel.php:67
 msgid "%s Settings"
 msgstr "%s 設定"
 
@@ -2011,7 +2056,7 @@ msgstr "Elementor でユーザーの編集範囲を管理"
 msgid "Role Manager"
 msgstr "権限グループ管理ツール"
 
-#: includes/settings/settings.php:514 core/dynamic-tags/tag.php:109
+#: core/dynamic-tags/tag.php:109 includes/settings/settings.php:530
 msgid "Fallback"
 msgstr "フォールバック"
 
@@ -2087,8 +2132,8 @@ msgstr "ここに見出しテキストを追加"
 msgid "Dismiss alert"
 msgstr "警告を閉じる"
 
-#: includes/widgets/icon-box.php:161 includes/widgets/image-box.php:138
-#: includes/widgets/alert.php:127
+#: includes/widgets/alert.php:127 includes/widgets/icon-box.php:161
+#: includes/widgets/image-box.php:138
 msgid "Enter your description"
 msgstr "説明を入力"
 
@@ -2096,7 +2141,7 @@ msgstr "説明を入力"
 msgid "This is an Alert"
 msgstr "これはアラートです"
 
-#: includes/widgets/toggle.php:181 includes/widgets/accordion.php:177
+#: includes/widgets/accordion.php:177 includes/widgets/toggle.php:181
 msgid "Active Icon"
 msgstr "アクティブアイコン"
 
@@ -2148,10 +2193,10 @@ msgstr ".JSON または .zip のテンプレートファイルをドラッグ & 
 msgid "Import Template to Your Library"
 msgstr "テンプレートをライブラリにインポート"
 
-#: includes/widgets/button.php:141 includes/widgets/button.php:142
 #: includes/editor-templates/templates.php:232
 #: includes/editor-templates/templates.php:248
-#: includes/editor-templates/templates.php:261
+#: includes/editor-templates/templates.php:261 includes/widgets/button.php:141
+#: includes/widgets/button.php:142
 msgid "Click here"
 msgstr "ここをクリック"
 
@@ -2198,15 +2243,15 @@ msgstr "新着"
 msgid "Import Template"
 msgstr "テンプレートをインポート"
 
-#: includes/controls/icons.php:82 includes/controls/media.php:199
-#: includes/controls/media.php:242 includes/editor-templates/repeater.php:27
-#: core/kits/views/panel.php:38
+#: core/kits/views/panel.php:38 includes/controls/media.php:199
+#: includes/controls/media.php:242 includes/controls/icons.php:82
+#: includes/editor-templates/repeater.php:27
 msgid "Remove"
 msgstr "削除"
 
-#: includes/editor-templates/hotkeys.php:67
-#: includes/editor-templates/repeater.php:21 assets/js/editor.js:18455
-#: assets/js/editor.js:36811 assets/js/editor-document.js:17647
+#: includes/editor-templates/repeater.php:21
+#: includes/editor-templates/hotkeys.php:67 assets/js/editor-document.js:17647
+#: assets/js/editor.js:18455 assets/js/editor.js:36811
 msgid "Duplicate"
 msgstr "複製"
 
@@ -2219,8 +2264,8 @@ msgstr "ドラッグ & ドロップ"
 msgid "Hide Panel"
 msgstr "パネルを非表示"
 
-#: includes/editor-templates/panel.php:119 assets/js/editor.js:20440
-#: assets/js/editor-document.js:19007
+#: includes/editor-templates/panel.php:119 assets/js/editor-document.js:19007
+#: assets/js/editor.js:20440
 msgid "Save as Template"
 msgstr "テンプレートとして保存"
 
@@ -2323,17 +2368,17 @@ msgstr "アクセスが拒否されました。"
 msgid "Disable Default Fonts"
 msgstr "デフォルトフォントを無効化"
 
-#: includes/widgets/toggle.php:406 includes/widgets/accordion.php:378
-#: includes/widgets/common.php:735 includes/widgets/image-carousel.php:533
+#: includes/elements/column.php:197 includes/widgets/common.php:735
+#: includes/widgets/image-carousel.php:533 includes/widgets/accordion.php:378
 #: includes/widgets/tabs.php:179 includes/widgets/tabs.php:209
-#: includes/elements/column.php:197
+#: includes/widgets/toggle.php:406
 msgid "End"
 msgstr "終了"
 
-#: includes/widgets/toggle.php:402 includes/widgets/accordion.php:374
-#: includes/widgets/common.php:727 includes/widgets/image-carousel.php:525
+#: includes/elements/column.php:195 includes/widgets/common.php:727
+#: includes/widgets/image-carousel.php:525 includes/widgets/accordion.php:374
 #: includes/widgets/tabs.php:171 includes/widgets/tabs.php:201
-#: includes/elements/column.php:195
+#: includes/widgets/toggle.php:402
 msgid "Start"
 msgstr "開始"
 
@@ -2377,8 +2422,8 @@ msgid "Revisions"
 msgstr "リビジョン"
 
 #: modules/history/views/history-panel-template.php:9
-#: includes/editor-templates/hotkeys.php:14
-#: includes/editor-templates/templates.php:124 assets/js/editor.js:36482
+#: includes/editor-templates/templates.php:124
+#: includes/editor-templates/hotkeys.php:14 assets/js/editor.js:36482
 msgid "Actions"
 msgstr "操作"
 
@@ -2388,13 +2433,13 @@ msgstr "操作"
 msgid "History"
 msgstr "履歴"
 
-#: includes/widgets/video.php:761
 #: core/kits/documents/tabs/settings-lightbox.php:152
+#: includes/widgets/video.php:761
 msgid "UI Hover Color"
 msgstr "UI のホバー色"
 
-#: includes/widgets/video.php:750
 #: core/kits/documents/tabs/settings-lightbox.php:141
+#: includes/widgets/video.php:750
 msgid "UI Color"
 msgstr "UI の色"
 
@@ -2454,12 +2499,12 @@ msgstr "バージョンのロールバック"
 msgid "Experiencing an issue with Elementor version %s? Rollback to a previous version before the issue appeared."
 msgstr "Elementor バージョン%sで問題が発生しましたか ? 問題が起こる前に使用していたバージョンにロールバックしてください。"
 
-#: includes/settings/tools.php:274
 #: core/common/modules/finder/categories/tools.php:58
+#: includes/settings/tools.php:274
 msgid "Version Control"
 msgstr "バージョン管理"
 
-#: includes/settings/settings.php:483
+#: includes/settings/settings.php:499
 msgid "Switch Editor Loader Method"
 msgstr "エディター読み込みツールのメソッドを切り替える"
 
@@ -2471,36 +2516,37 @@ msgstr "連携"
 msgid "Sets the default space between widgets (Default: 20)"
 msgstr "ウィジェット間のデフォルト間隔を設定 (デフォルト: 20)。"
 
-#: includes/rollback.php:165 includes/settings/tools.php:120
-#: includes/settings/tools.php:277
+#: includes/settings/tools.php:120 includes/settings/tools.php:277
+#: includes/rollback.php:165
 msgid "Rollback to Previous Version"
 msgstr "以前のバージョンにロールバックする"
 
-#: includes/widgets/common.php:229 includes/elements/section.php:1290
-#: includes/elements/column.php:825
+#: includes/elements/section.php:1290 includes/elements/column.php:825
+#: includes/widgets/common.php:229
 msgid "Animation Delay"
 msgstr "アニメーション遅延"
 
-#: includes/widgets/common.php:150 includes/elements/section.php:1211
-#: includes/elements/column.php:726
+#: includes/elements/section.php:1211 includes/elements/column.php:726
+#: includes/widgets/common.php:150
 msgid "Z-Index"
 msgstr "Z-Index"
 
+#: core/kits/documents/tabs/theme-style-images.php:203
+#: core/kits/documents/tabs/theme-style-form-fields.php:139
 #: modules/shapes/widgets/text-path.php:433
-#: modules/shapes/widgets/text-path.php:607 includes/widgets/image-box.php:330
-#: includes/widgets/common.php:289 includes/widgets/common.php:396
-#: includes/widgets/image.php:453 includes/widgets/google-maps.php:219
+#: modules/shapes/widgets/text-path.php:607
 #: includes/controls/groups/background.php:699
 #: includes/elements/section.php:601 includes/elements/section.php:784
 #: includes/elements/section.php:890 includes/elements/column.php:300
 #: includes/elements/column.php:456 includes/elements/column.php:563
-#: core/kits/documents/tabs/theme-style-images.php:203
-#: core/kits/documents/tabs/theme-style-form-fields.php:139
+#: includes/widgets/google-maps.php:238 includes/widgets/common.php:289
+#: includes/widgets/common.php:396 includes/widgets/image-box.php:330
+#: includes/widgets/image.php:453
 msgid "Transition Duration"
 msgstr "トランジション所要時間"
 
-#: includes/elements/column.php:213
 #: core/kits/documents/tabs/settings-layout.php:83
+#: includes/elements/column.php:213
 msgid "Widgets Space"
 msgstr "ウィジェットスペース"
 
@@ -2531,39 +2577,39 @@ msgstr "位置"
 msgid "Elementor requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING."
 msgstr "Elementor は WordPress バージョン%s以上が必要です。現在利用中のバージョンが古いため、現在プラグインは動作していません。"
 
-#: includes/settings/settings.php:479
+#: includes/settings/settings.php:495
 msgid "Use internal CSS that is embedded in the head of the page. For troubleshooting server configuration conflicts and managing development environments."
 msgstr "内部 CSS をページヘッダに埋め込んで使用します。サーバー設定との相性が悪い場合のトラブルシューティングと、開発環境の管理に利用します。"
 
-#: includes/settings/settings.php:479
+#: includes/settings/settings.php:495
 msgid "Use external CSS files for all generated stylesheets. Choose this setting for better performance (recommended)."
 msgstr "すべての生成スタイルシートに外部 CSS を使用します。サイトパフォーマンスをより良くするには、こちらを選択してください (推奨)。"
 
-#: includes/settings/settings.php:477
+#: includes/settings/settings.php:493
 msgid "Internal Embedding"
 msgstr "内部埋め込み"
 
-#: includes/settings/settings.php:476
+#: includes/settings/settings.php:492
 msgid "External File"
 msgstr "外部ファイル"
 
-#: includes/settings/settings.php:471
+#: includes/settings/settings.php:487
 msgid "CSS Print Method"
 msgstr "CSS 印刷設定"
 
-#: includes/settings/settings.php:490
+#: includes/settings/settings.php:506
 msgid "For troubleshooting server configuration conflicts."
 msgstr "サーバー設定との相性問題のトラブルシューティング用です。"
 
-#: modules/safe-mode/module.php:47 includes/settings/settings.php:488
-#: includes/settings/settings.php:500 includes/settings/tools.php:321
-#: core/debug/inspector.php:55 assets/js/editor.js:26662
+#: core/debug/inspector.php:55 modules/safe-mode/module.php:47
+#: includes/settings/tools.php:321 includes/settings/settings.php:504
+#: includes/settings/settings.php:516 assets/js/editor.js:26662
 msgid "Enable"
 msgstr "有効化"
 
-#: modules/safe-mode/module.php:46 includes/settings/settings.php:487
-#: includes/settings/settings.php:499 includes/settings/tools.php:320
-#: core/debug/inspector.php:54
+#: core/debug/inspector.php:54 modules/safe-mode/module.php:46
+#: includes/settings/tools.php:320 includes/settings/settings.php:503
+#: includes/settings/settings.php:515
 msgid "Disable"
 msgstr "無効化"
 
@@ -2571,8 +2617,8 @@ msgstr "無効化"
 msgid "Status"
 msgstr "ステータス"
 
-#: includes/widgets/spacer.php:108 includes/widgets/common.php:640
-#: includes/widgets/text-editor.php:338
+#: includes/widgets/text-editor.php:338 includes/widgets/spacer.php:108
+#: includes/widgets/common.php:640
 msgid "Space"
 msgstr "スペース"
 
@@ -2588,13 +2634,13 @@ msgstr "Elementor がページタイトルを隠します。このオプショ�
 msgid "Page Title Selector"
 msgstr "ページタイトルセレクター"
 
-#: includes/admin-templates/new-template.php:61
 #: includes/settings/controls.php:156
+#: includes/admin-templates/new-template.php:61
 msgid "Select"
 msgstr "選択"
 
-#: includes/editor-templates/hotkeys.php:51 assets/js/editor.js:18488
-#: assets/js/editor-document.js:17680
+#: includes/editor-templates/hotkeys.php:51 assets/js/editor-document.js:17680
+#: assets/js/editor.js:18488
 msgid "Paste Style"
 msgstr "スタイル貼り付け"
 
@@ -2659,7 +2705,7 @@ msgstr "メンテナンス"
 msgid "Coming Soon"
 msgstr "Coming Soon"
 
-#: includes/maintenance-mode.php:203 core/kits/documents/kit.php:143
+#: core/kits/documents/kit.php:143 includes/maintenance-mode.php:203
 #: assets/js/editor.js:36810
 msgid "Disabled"
 msgstr "無効"
@@ -2672,8 +2718,8 @@ msgstr "モードを選択"
 msgid "Set your entire website as MAINTENANCE MODE, meaning the site is offline temporarily for maintenance, or set it as COMING SOON mode, meaning the site is offline until it is ready to be launched."
 msgstr "サイト全体をメンテナンスモード (サイト全体がメンテナンスのためオフラインになります) または、Coming Soon モード (サイト公開までオフラインになります) のどちらかに設定します。"
 
-#: includes/maintenance-mode.php:190 includes/maintenance-mode.php:194
 #: core/common/modules/finder/categories/tools.php:64
+#: includes/maintenance-mode.php:190 includes/maintenance-mode.php:194
 msgid "Maintenance Mode"
 msgstr "メンテナンスモード"
 
@@ -2681,16 +2727,16 @@ msgstr "メンテナンスモード"
 msgid "Bring to Front"
 msgstr "最前面に移動"
 
-#: includes/widgets/video.php:605 includes/widgets/video.php:726
-#: includes/widgets/image-carousel.php:203 includes/widgets/image.php:219
-#: includes/widgets/image-gallery.php:142
 #: core/kits/documents/tabs/settings-lightbox.php:18
+#: includes/widgets/image-gallery.php:142
+#: includes/widgets/image-carousel.php:203 includes/widgets/video.php:605
+#: includes/widgets/video.php:726 includes/widgets/image.php:219
 msgid "Lightbox"
 msgstr "Lightbox"
 
-#: includes/widgets/toggle.php:279 includes/widgets/icon-list.php:217
 #: includes/elements/section.php:453 includes/elements/column.php:170
-#: includes/elements/column.php:198
+#: includes/elements/column.php:198 includes/widgets/icon-list.php:217
+#: includes/widgets/toggle.php:279
 msgid "Space Between"
 msgstr "スペースの間隔"
 
@@ -2804,29 +2850,29 @@ msgstr "シェイプ区切り"
 msgid "Navigation Width"
 msgstr "ナビゲーション幅"
 
-#: modules/shapes/widgets/text-path.php:406
-#: modules/shapes/widgets/text-path.php:546 includes/widgets/icon-box.php:302
-#: includes/widgets/image-box.php:351 includes/widgets/common.php:274
-#: includes/widgets/common.php:361 includes/widgets/icon.php:248
-#: includes/widgets/image.php:420 includes/widgets/button.php:345
-#: includes/widgets/google-maps.php:204 includes/widgets/icon-list.php:412
-#: includes/widgets/icon-list.php:496 includes/elements/section.php:586
-#: includes/elements/section.php:738 includes/elements/section.php:855
-#: includes/elements/column.php:285 includes/elements/column.php:410
-#: includes/elements/column.php:528
 #: core/kits/documents/tabs/theme-style-images.php:134
 #: core/kits/documents/tabs/theme-style-typography.php:156
 #: core/kits/documents/tabs/theme-style-buttons.php:157
+#: modules/shapes/widgets/text-path.php:406
+#: modules/shapes/widgets/text-path.php:546 includes/elements/section.php:586
+#: includes/elements/section.php:738 includes/elements/section.php:855
+#: includes/elements/column.php:285 includes/elements/column.php:410
+#: includes/elements/column.php:528 includes/widgets/button.php:345
+#: includes/widgets/google-maps.php:223 includes/widgets/icon-box.php:302
+#: includes/widgets/icon.php:248 includes/widgets/common.php:274
+#: includes/widgets/common.php:361 includes/widgets/image-box.php:351
+#: includes/widgets/icon-list.php:412 includes/widgets/icon-list.php:496
+#: includes/widgets/image.php:420
 msgid "Hover"
 msgstr "マウスオーバー"
 
-#: includes/widgets/common.php:169 includes/widgets/button.php:262
 #: includes/elements/section.php:1229 includes/elements/column.php:744
+#: includes/widgets/button.php:262 includes/widgets/common.php:169
 msgid "Add your custom id WITHOUT the Pound key. e.g: my-id"
 msgstr "# なしでタグの ID を追加します。例:  my-id"
 
-#: includes/widgets/common.php:163 includes/elements/section.php:1223
-#: includes/elements/column.php:738
+#: includes/elements/section.php:1223 includes/elements/column.php:738
+#: includes/widgets/common.php:163
 msgid "CSS ID"
 msgstr "CSS ID"
 
@@ -2890,11 +2936,11 @@ msgstr "ドキュメントとよくある質問"
 msgid "View Elementor Documentation"
 msgstr "Elementor ドキュメントの表示"
 
-#: includes/utils.php:138
+#: includes/utils.php:137
 msgid "The `from` and `to` URL's must be different"
 msgstr "「from」と「to」の URL は別である必要があります"
 
-#: includes/utils.php:143
+#: includes/utils.php:142
 msgid "The `from` and `to` URL's must be valid URL's"
 msgstr "「from」と「to」は有効な URL である必要があります"
 
@@ -2911,9 +2957,9 @@ msgstr "サイトアドレス (URL) を更新"
 msgid "<strong>Important:</strong> It is strongly recommended that you <a target=\"_blank\" href=\"%s\">backup your database</a> before using Replace URL."
 msgstr "<strong>重要:</strong> URL 置換を実行する前に、<a target=\"_blank\" href=\"%s\">データベースのバックアップ</a>を強くおすすめします。"
 
+#: core/common/modules/finder/categories/tools.php:52
 #: includes/settings/tools.php:246 includes/settings/tools.php:257
 #: includes/settings/tools.php:265
-#: core/common/modules/finder/categories/tools.php:52
 msgid "Replace URL"
 msgstr "URL を変更"
 
@@ -2985,8 +3031,8 @@ msgstr "カスタム CSS を使用すると、任意のウィジェットに CSS
 msgid "Meet Our Custom CSS"
 msgstr "カスタム CSS のご紹介"
 
-#: includes/managers/controls.php:890
 #: core/kits/documents/tabs/settings-custom-css.php:17
+#: includes/managers/controls.php:890
 msgid "Custom CSS"
 msgstr "カスタム CSS"
 
@@ -2998,14 +3044,13 @@ msgstr "ウィジェットをグローバルとして保存し、他のエリア
 msgid "Meet Our Global Widget"
 msgstr "グローバルウィジェットをチェック"
 
-#: includes/managers/controls.php:930
-#: includes/editor-templates/panel-elements.php:23
-#: includes/editor-templates/panel-elements.php:57
+#: core/role-manager/role-manager.php:168 core/editor/notice-bar.php:24
+#: core/admin/admin.php:279 core/admin/admin.php:481
 #: includes/settings/settings.php:155 includes/settings/settings.php:292
 #: includes/settings/settings.php:313 includes/settings/settings.php:334
-#: core/editor/notice-bar.php:24 core/admin/admin.php:279
-#: core/admin/admin.php:481 core/role-manager/role-manager.php:168
-#: assets/js/editor.js:8748
+#: includes/editor-templates/panel-elements.php:23
+#: includes/editor-templates/panel-elements.php:57
+#: includes/managers/controls.php:930 assets/js/editor.js:8748
 msgid "Go Pro"
 msgstr "プロ版にする"
 
@@ -3013,20 +3058,20 @@ msgstr "プロ版にする"
 msgid "Get more with Elementor Pro"
 msgstr "Elementor Pro でさらにパワーアップ"
 
-#: includes/editor-templates/panel-elements.php:11 assets/js/editor.js:24116
-#: assets/js/editor-document.js:9618
+#: includes/editor-templates/panel-elements.php:11
+#: assets/js/editor-document.js:9618 assets/js/editor.js:24116
 msgid "Global"
 msgstr "全般"
 
-#: modules/shapes/widgets/text-path.php:198 includes/widgets/video.php:608
-#: includes/widgets/common.php:431 includes/widgets/text-editor.php:122
-#: includes/widgets/icon-list.php:263
+#: modules/shapes/widgets/text-path.php:198
+#: includes/widgets/text-editor.php:122 includes/widgets/common.php:431
+#: includes/widgets/video.php:608 includes/widgets/icon-list.php:263
 msgid "Off"
 msgstr "オフ"
 
-#: modules/shapes/widgets/text-path.php:197 includes/widgets/video.php:609
-#: includes/widgets/common.php:430 includes/widgets/text-editor.php:123
-#: includes/widgets/icon-list.php:264
+#: modules/shapes/widgets/text-path.php:197
+#: includes/widgets/text-editor.php:123 includes/widgets/common.php:430
+#: includes/widgets/video.php:609 includes/widgets/icon-list.php:264
 msgid "On"
 msgstr "オン"
 
@@ -3094,8 +3139,8 @@ msgstr "JS を使用してセクションをページの全幅に拡張します
 msgid "Stretch Section"
 msgstr "伸縮セクション"
 
-#: includes/elements/section.php:495 includes/settings/settings-page.php:366
-#: core/admin/admin-notices.php:217
+#: core/admin/admin-notices.php:217 includes/settings/settings-page.php:366
+#: includes/elements/section.php:495
 msgid "Learn more."
 msgstr "詳細。"
 
@@ -3103,7 +3148,7 @@ msgstr "詳細。"
 msgid "Reverse Columns"
 msgstr "カラムを逆にする"
 
-#: includes/elements/section.php:1328 core/breakpoints/manager.php:154
+#: core/breakpoints/manager.php:154 includes/elements/section.php:1328
 msgid "Mobile"
 msgstr "モバイル"
 
@@ -3198,25 +3243,25 @@ msgstr "ローカル"
 msgid "Elementor Library automatically updates on a daily basis. You can also manually update it by clicking on the sync button."
 msgstr "Elementor ライブラリは基本的に毎日、自動的にアップデートします。手動でアップでとしたい場合は同期ボタン (Sync) をクリックすることで同期されます。"
 
+#: includes/settings/tools.php:234 includes/settings/tools.php:237
 #: includes/editor-templates/templates.php:14
-#: includes/editor-templates/templates.php:15 includes/settings/tools.php:234
-#: includes/settings/tools.php:237
+#: includes/editor-templates/templates.php:15
 msgid "Sync Library"
 msgstr "ライブラリーを同期"
 
-#: includes/settings/tools.php:36 includes/settings/tools.php:37
-#: includes/settings/tools.php:344
 #: core/common/modules/finder/categories/tools.php:28
 #: core/common/modules/finder/categories/tools.php:46
+#: includes/settings/tools.php:36 includes/settings/tools.php:37
+#: includes/settings/tools.php:344
 msgid "Tools"
 msgstr "ツール"
 
-#: modules/library/documents/page.php:66 core/document-types/page.php:42
+#: core/document-types/page.php:42 modules/library/documents/page.php:66
 #: assets/js/editor.js:10474
 msgid "Page"
 msgstr "固定ページ"
 
-#: includes/utils.php:166 assets/js/editor.js:10639
+#: includes/utils.php:155 assets/js/editor.js:10639
 msgid "An error occurred"
 msgstr "エラーが発生しました"
 
@@ -3246,10 +3291,11 @@ msgstr "挿入"
 msgid "Library"
 msgstr "ライブラリ"
 
-#: includes/frontend.php:1213 includes/editor-templates/global.php:18
+#: includes/editor-templates/responsive-bar.php:43
+#: includes/editor-templates/global.php:18
 #: includes/editor-templates/library-layout.php:15
-#: includes/editor-templates/library-layout.php:16
-#: includes/editor-templates/responsive-bar.php:43 assets/js/editor.js:35897
+#: includes/editor-templates/library-layout.php:16 includes/frontend.php:1213
+#: assets/js/editor.js:35897
 msgid "Close"
 msgstr "閉じる"
 
@@ -3276,15 +3322,16 @@ msgctxt "System Info"
 msgid "If you want to modify the source code of your theme, we recommend using a <a href=\"%s\">child theme</a>."
 msgstr "テーマのソースコードを変更する場合は、<a href=\"%s\">子テーマ</a>を使用することをおすすめします。"
 
-#: modules/safe-mode/mu-plugin/elementor-safe-mode.php:103
-#: modules/safe-mode/module.php:361 modules/safe-mode/module.php:370
-#: includes/controls/url.php:76 includes/settings/settings.php:454
+#: core/experiments/manager.php:222 core/experiments/manager.php:235
+#: core/experiments/manager.php:245
 #: core/app/modules/import-export/module.php:114
 #: core/app/modules/import-export/module.php:126
-#: core/experiments/manager.php:222 core/experiments/manager.php:235
-#: core/experiments/manager.php:245 core/admin/admin-notices.php:314
-#: core/admin/admin-notices.php:355 core/admin/admin-notices.php:397
-#: core/admin/admin-notices.php:439 core/admin/admin-notices.php:481
+#: core/admin/admin-notices.php:314 core/admin/admin-notices.php:355
+#: core/admin/admin-notices.php:397 core/admin/admin-notices.php:439
+#: core/admin/admin-notices.php:481 modules/safe-mode/module.php:361
+#: modules/safe-mode/module.php:370
+#: modules/safe-mode/mu-plugin/elementor-safe-mode.php:103
+#: includes/settings/settings.php:454 includes/controls/url.php:76
 #: assets/js/editor.js:13838 assets/js/editor.js:17360
 #: assets/js/editor.js:17392 assets/js/editor.js:27260
 msgid "Learn More"
@@ -3295,10 +3342,10 @@ msgstr "さらに詳しく"
 msgid "Global Fonts"
 msgstr "グローバルフォント"
 
-#: modules/shapes/widgets/text-path.php:425
-#: includes/widgets/social-icons.php:539 includes/widgets/icon-box.php:338
-#: includes/widgets/image-box.php:288 includes/widgets/icon.php:286
-#: includes/widgets/image.php:470 includes/widgets/button.php:394
+#: modules/shapes/widgets/text-path.php:425 includes/widgets/button.php:394
+#: includes/widgets/icon-box.php:338 includes/widgets/icon.php:286
+#: includes/widgets/image-box.php:288 includes/widgets/social-icons.php:539
+#: includes/widgets/image.php:470
 msgid "Hover Animation"
 msgstr "ホバー時のアニメーション"
 
@@ -3307,13 +3354,13 @@ msgctxt "Background Control"
 msgid "Contain"
 msgstr "含む"
 
-#: includes/widgets/common.php:217 includes/elements/section.php:1278
-#: includes/elements/column.php:813
+#: includes/elements/section.php:1278 includes/elements/column.php:813
+#: includes/widgets/common.php:217
 msgid "Fast"
 msgstr "高速"
 
-#: includes/widgets/common.php:215 includes/elements/section.php:1276
-#: includes/elements/column.php:811
+#: includes/elements/section.php:1276 includes/elements/column.php:811
+#: includes/widgets/common.php:215
 msgid "Slow"
 msgstr "ゆっくり"
 
@@ -3329,8 +3376,8 @@ msgstr "デフォルトフォント"
 msgid "Color Palettes"
 msgstr "カラーパレット"
 
-#: includes/widgets/video.php:811 includes/widgets/common.php:202
 #: includes/elements/section.php:1263 includes/elements/column.php:798
+#: includes/widgets/common.php:202 includes/widgets/video.php:811
 msgid "Entrance Animation"
 msgstr "開始アニメーション"
 
@@ -3349,13 +3396,13 @@ msgctxt "Box Shadow Control"
 msgid "Box Shadow"
 msgstr "ボックスシャドウ"
 
-#: includes/widgets/tabs.php:157 includes/controls/box-shadow.php:73
-#: includes/controls/text-shadow.php:76
+#: includes/controls/box-shadow.php:73 includes/controls/text-shadow.php:76
+#: includes/widgets/tabs.php:157
 msgid "Vertical"
 msgstr "垂直"
 
-#: includes/widgets/tabs.php:156 includes/controls/box-shadow.php:68
-#: includes/controls/text-shadow.php:71
+#: includes/controls/box-shadow.php:68 includes/controls/text-shadow.php:71
+#: includes/widgets/tabs.php:156
 msgid "Horizontal"
 msgstr "水平"
 
@@ -3408,7 +3455,7 @@ msgstr "コメント"
 msgid "Share Button"
 msgstr "シェアボタン"
 
-#: includes/widgets/video.php:506 includes/widgets/audio.php:174
+#: includes/widgets/audio.php:174 includes/widgets/video.php:506
 msgid "Download Button"
 msgstr "ダウンロードボタン"
 
@@ -3472,7 +3519,7 @@ msgstr "もっと良いプラグインを見つけた"
 msgid "I no longer need the plugin"
 msgstr "プラグインが必要がなくなった"
 
-#: core/admin/admin-notices.php:137 core/base/db-upgrades-manager.php:91
+#: core/base/db-upgrades-manager.php:91 core/admin/admin-notices.php:137
 msgid "Update Now"
 msgstr "今すぐ更新"
 
@@ -3491,19 +3538,19 @@ msgstr "Elementor Page Builder の新バージョンをご利用いただける�
 msgid "Custom URL"
 msgstr "カスタム URL"
 
-#: includes/editor-templates/hotkeys.php:43 assets/js/editor.js:18476
-#: assets/js/editor.js:20061 assets/js/editor.js:29268
-#: assets/js/editor.js:30161 assets/js/editor-document.js:17668
+#: includes/editor-templates/hotkeys.php:43 assets/js/editor-document.js:17668
 #: assets/js/editor-document.js:18628 assets/js/editor-document.js:20122
+#: assets/js/editor.js:18476 assets/js/editor.js:20061
+#: assets/js/editor.js:29268 assets/js/editor.js:30161
 msgid "Paste"
 msgstr "貼り付け"
 
-#: includes/widgets/toggle.php:314 includes/widgets/toggle.php:470
-#: includes/widgets/accordion.php:287 includes/widgets/accordion.php:442
-#: includes/widgets/common.php:247 includes/widgets/button.php:323
-#: includes/widgets/button.php:365 includes/elements/section.php:554
-#: includes/elements/column.php:252
 #: core/kits/documents/tabs/settings-background.php:18
+#: includes/elements/section.php:554 includes/elements/column.php:252
+#: includes/widgets/button.php:323 includes/widgets/button.php:365
+#: includes/widgets/common.php:247 includes/widgets/accordion.php:287
+#: includes/widgets/accordion.php:442 includes/widgets/toggle.php:314
+#: includes/widgets/toggle.php:470
 msgid "Background"
 msgstr "背景"
 
@@ -3511,10 +3558,9 @@ msgstr "背景"
 msgid "Wider"
 msgstr "さらに幅広"
 
-#: includes/managers/elements.php:279 includes/settings/settings.php:401
-#: includes/settings/tools.php:221
 #: core/common/modules/finder/categories/general.php:29
-#: core/role-manager/role-manager.php:57
+#: core/role-manager/role-manager.php:57 includes/settings/tools.php:221
+#: includes/settings/settings.php:401 includes/managers/elements.php:279
 msgid "General"
 msgstr "一般"
 
@@ -3522,13 +3568,13 @@ msgstr "一般"
 msgid "Intro Byline"
 msgstr "イントロ署名欄"
 
-#: includes/widgets/social-icons.php:428 includes/widgets/toggle.php:442
-#: includes/widgets/accordion.php:414 includes/widgets/icon-box.php:350
-#: includes/widgets/icon-box.php:517 includes/widgets/image-box.php:225
-#: includes/widgets/image-box.php:451 includes/widgets/star-rating.php:291
-#: includes/widgets/image-carousel.php:549 includes/widgets/image.php:602
-#: includes/widgets/image-gallery.php:191 includes/widgets/divider.php:760
-#: includes/widgets/divider.php:900
+#: includes/widgets/icon-box.php:350 includes/widgets/icon-box.php:517
+#: includes/widgets/image-gallery.php:191 includes/widgets/image-box.php:225
+#: includes/widgets/image-box.php:451 includes/widgets/social-icons.php:428
+#: includes/widgets/divider.php:760 includes/widgets/divider.php:900
+#: includes/widgets/image-carousel.php:549 includes/widgets/accordion.php:414
+#: includes/widgets/image.php:602 includes/widgets/star-rating.php:291
+#: includes/widgets/toggle.php:442
 msgid "Spacing"
 msgstr "間隔"
 
@@ -3542,8 +3588,8 @@ msgstr "外側"
 msgid "Inside"
 msgstr "内側"
 
-#: includes/widgets/image-carousel.php:359
 #: includes/controls/groups/background.php:764
+#: includes/widgets/image-carousel.php:359
 msgid "Direction"
 msgstr "向き"
 
@@ -3551,7 +3597,7 @@ msgstr "向き"
 msgid "Animation Speed"
 msgstr "アニメーション速度"
 
-#: includes/widgets/image-carousel.php:246 includes/widgets/audio.php:135
+#: includes/widgets/audio.php:135 includes/widgets/image-carousel.php:246
 msgid "Additional Options"
 msgstr "追加オプション"
 
@@ -3568,8 +3614,8 @@ msgstr "画像のストレッチ"
 msgid "Image Carousel"
 msgstr "画像カルーセル"
 
-#: includes/widgets/counter.php:159 includes/widgets/common.php:211
 #: includes/elements/section.php:1272 includes/elements/column.php:807
+#: includes/widgets/common.php:211 includes/widgets/counter.php:159
 msgid "Animation Duration"
 msgstr "アニメーションの継続時間"
 
@@ -3577,11 +3623,11 @@ msgstr "アニメーションの継続時間"
 msgid "Left Border Width"
 msgstr "左ボーダー幅"
 
-#: includes/controls/groups/image-size.php:278
+#: includes/controls/groups/image-size.php:297
 msgid "You can crop the original image size to any custom size. You can also set a single value for height or width in order to keep the original size ratio."
 msgstr "元の画像サイズを任意のカスタムサイズにトリミングすることができます。また、元のサイズ比を維持するために、高さまたは幅に単一の値を設定することもできます。"
 
-#: includes/widgets/video.php:494 includes/widgets/audio.php:243
+#: includes/widgets/audio.php:243 includes/widgets/video.php:494
 msgid "Controls Color"
 msgstr "色の管理"
 
@@ -3618,12 +3664,12 @@ msgstr "表示"
 msgid "The server does not have ImageMagick or GD installed and/or enabled! Any of these libraries are required for WordPress to be able to resize images. Please contact your server administrator to enable this before continuing."
 msgstr "サーバーに ImageMagick または GD がインストールされていないか、または使用可能になっていません。 WordPress が画像のサイズを変更できるようにするには、これらのライブラリが必要です。続行する前に、これを有効にするにはサーバー管理者に連絡してください。"
 
-#: includes/controls/groups/image-size.php:276
+#: includes/controls/groups/image-size.php:295
 msgctxt "Image Size Control"
 msgid "Image Dimension"
 msgstr "画像サイズ"
 
-#: includes/controls/groups/image-size.php:359
+#: includes/controls/groups/image-size.php:378
 msgctxt "Image Size Control"
 msgid "Custom"
 msgstr "カスタム"
@@ -3656,7 +3702,7 @@ msgstr "フェード"
 msgid "Effect"
 msgstr "エフェクト"
 
-#: includes/controls/groups/image-size.php:356
+#: includes/controls/groups/image-size.php:375
 msgctxt "Image Size Control"
 msgid "Full"
 msgstr "フル"
@@ -3665,8 +3711,8 @@ msgstr "フル"
 msgid "Vertical Alignment"
 msgstr "縦方向の位置揃え"
 
-#: includes/widgets/image-carousel.php:317
 #: includes/controls/groups/background.php:660
+#: includes/widgets/image-carousel.php:317
 msgid "Infinite Loop"
 msgstr "無限ループ"
 
@@ -3675,7 +3721,7 @@ msgstr "無限ループ"
 msgid "Dots"
 msgstr "ドット"
 
-#: includes/controls/groups/image-size.php:271
+#: includes/controls/groups/image-size.php:290
 msgctxt "Image Size Control"
 msgid "Image Size"
 msgstr "画像サイズ"
@@ -3685,8 +3731,8 @@ msgctxt "Typography Control"
 msgid "None"
 msgstr "なし"
 
-#: includes/widgets/toggle.php:211 includes/widgets/accordion.php:207
 #: includes/widgets/icon-box.php:219 includes/widgets/image-box.php:186
+#: includes/widgets/accordion.php:207 includes/widgets/toggle.php:211
 msgid "Title HTML Tag"
 msgstr "タイトル HTML タグ"
 
@@ -3694,8 +3740,8 @@ msgstr "タイトル HTML タグ"
 msgid "This is the heading"
 msgstr "これは見出しです"
 
-#: includes/widgets/common.php:184 includes/elements/section.php:1245
-#: includes/elements/column.php:760
+#: includes/elements/section.php:1245 includes/elements/column.php:760
+#: includes/widgets/common.php:184
 msgid "Add your custom class WITHOUT the dot. e.g: my-class"
 msgstr "カスタムクラス名をピリオド記号なしで追加してください。例: my-class"
 
@@ -3716,17 +3762,17 @@ msgctxt "System Info"
 msgid "We recommend to use php 5.4 or higher"
 msgstr "PHP 5.4 以降の使用をお勧めします"
 
-#: includes/editor-templates/panel-elements.php:10 assets/js/editor.js:24113
+#: includes/editor-templates/panel-elements.php:10
 #: assets/js/editor-document.js:8938 assets/js/editor-document.js:11053
-#: assets/js/editor-document.js:11612
+#: assets/js/editor-document.js:11612 assets/js/editor.js:24113
 msgid "Elements"
 msgstr "要素"
 
-#: includes/managers/controls.php:304
-#: includes/editor-templates/responsive-bar.php:48
-#: includes/editor-templates/panel.php:65 includes/settings/settings.php:367
 #: core/common/modules/finder/categories/settings.php:28
 #: core/dynamic-tags/base-tag.php:171 core/admin/admin.php:275
+#: includes/settings/settings.php:367
+#: includes/editor-templates/responsive-bar.php:48
+#: includes/editor-templates/panel.php:65 includes/managers/controls.php:304
 #: assets/js/editor.js:9732 assets/js/editor.js:24870 assets/js/editor.js:36050
 msgid "Settings"
 msgstr "設定"
@@ -3927,8 +3973,8 @@ msgstr "メニューアンカー"
 msgid "Image Position"
 msgstr "画像の位置"
 
-#: includes/widgets/image-carousel.php:565
 #: includes/widgets/image-gallery.php:208
+#: includes/widgets/image-carousel.php:565
 msgid "Image Spacing"
 msgstr "画像間隔"
 
@@ -3944,10 +3990,10 @@ msgstr "画像ボックス"
 msgid "Icon Hover"
 msgstr "アイコンマウスオーバー"
 
-#: includes/widgets/toggle.php:249 includes/widgets/accordion.php:245
 #: includes/widgets/icon-box.php:425 includes/widgets/icon.php:358
-#: includes/widgets/text-editor.php:377 includes/widgets/tabs.php:260
-#: includes/widgets/divider.php:939
+#: includes/widgets/text-editor.php:377 includes/widgets/divider.php:939
+#: includes/widgets/accordion.php:245 includes/widgets/tabs.php:260
+#: includes/widgets/toggle.php:249
 msgid "Border Width"
 msgstr "枠線の幅"
 
@@ -3956,35 +4002,35 @@ msgstr "枠線の幅"
 msgid "Rotate"
 msgstr "回転"
 
-#: includes/widgets/social-icons.php:212 includes/widgets/social-icons.php:370
-#: includes/widgets/social-icons.php:508 includes/widgets/icon-box.php:284
-#: includes/widgets/icon-box.php:322 includes/widgets/icon.php:229
-#: includes/widgets/icon.php:269 includes/widgets/text-editor.php:293
+#: includes/widgets/icon-box.php:284 includes/widgets/icon-box.php:322
+#: includes/widgets/icon.php:229 includes/widgets/icon.php:269
+#: includes/widgets/text-editor.php:293 includes/widgets/social-icons.php:212
+#: includes/widgets/social-icons.php:370 includes/widgets/social-icons.php:508
 #: includes/widgets/divider.php:859
 msgid "Secondary Color"
 msgstr "サブカラー"
 
-#: includes/widgets/social-icons.php:198 includes/widgets/social-icons.php:356
-#: includes/widgets/social-icons.php:493 includes/widgets/icon-box.php:268
-#: includes/widgets/icon-box.php:309 includes/widgets/icon.php:212
-#: includes/widgets/icon.php:255 includes/widgets/text-editor.php:278
+#: includes/widgets/icon-box.php:268 includes/widgets/icon-box.php:309
+#: includes/widgets/icon.php:212 includes/widgets/icon.php:255
+#: includes/widgets/text-editor.php:278 includes/widgets/social-icons.php:198
+#: includes/widgets/social-icons.php:356 includes/widgets/social-icons.php:493
 #: includes/widgets/divider.php:842
 msgid "Primary Color"
 msgstr "メインカラー"
 
-#: includes/widgets/social-icons.php:262 includes/widgets/icon-box.php:127
-#: includes/widgets/icon.php:142
+#: includes/widgets/icon-box.php:127 includes/widgets/icon.php:142
+#: includes/widgets/social-icons.php:262
 msgid "Square"
 msgstr "正方形"
 
-#: modules/shapes/module.php:20 includes/widgets/social-icons.php:263
-#: includes/widgets/icon-box.php:126 includes/widgets/common.php:62
-#: includes/widgets/icon.php:141
+#: modules/shapes/module.php:20 includes/widgets/icon-box.php:126
+#: includes/widgets/icon.php:141 includes/widgets/common.php:62
+#: includes/widgets/social-icons.php:263
 msgid "Circle"
 msgstr "円"
 
-#: includes/widgets/social-icons.php:257 includes/widgets/icon-box.php:123
-#: includes/widgets/common.php:437 includes/widgets/icon.php:138
+#: includes/widgets/icon-box.php:123 includes/widgets/icon.php:138
+#: includes/widgets/common.php:437 includes/widgets/social-icons.php:257
 msgid "Shape"
 msgstr "形状"
 
@@ -4022,11 +4068,11 @@ msgstr "リストアイテム #1"
 msgid "Icon List"
 msgstr "アイコンリスト"
 
-#: includes/widgets/social-icons.php:178 includes/widgets/icon-box.php:176
-#: includes/widgets/image-box.php:153 includes/widgets/image-carousel.php:192
-#: includes/widgets/icon.php:160 includes/widgets/image.php:208
-#: includes/widgets/button.php:154 includes/widgets/testimonial.php:160
-#: includes/widgets/icon-list.php:152
+#: includes/widgets/button.php:154 includes/widgets/icon-box.php:176
+#: includes/widgets/icon.php:160 includes/widgets/image-box.php:153
+#: includes/widgets/social-icons.php:178
+#: includes/widgets/image-carousel.php:192 includes/widgets/icon-list.php:152
+#: includes/widgets/image.php:208 includes/widgets/testimonial.php:160
 msgid "https://your-link.com"
 msgstr "https://your-link.com"
 
@@ -4070,13 +4116,13 @@ msgstr "H2"
 msgid "H1"
 msgstr "H1"
 
-#: includes/widgets/divider.php:525 includes/widgets/heading.php:156
 #: includes/elements/section.php:519 includes/elements/column.php:240
+#: includes/widgets/heading.php:156 includes/widgets/divider.php:525
 msgid "HTML Tag"
 msgstr "HTML タグ"
 
-#: includes/widgets/icon-box.php:147 includes/widgets/image-box.php:124
-#: includes/widgets/alert.php:113 includes/widgets/progress.php:100
+#: includes/widgets/alert.php:113 includes/widgets/icon-box.php:147
+#: includes/widgets/image-box.php:124 includes/widgets/progress.php:100
 #: includes/widgets/heading.php:116
 msgid "Enter your title"
 msgstr "タイトルを入力"
@@ -4085,11 +4131,11 @@ msgstr "タイトルを入力"
 msgid "Heading"
 msgstr "見出し"
 
-#: includes/widgets/google-maps.php:107
+#: includes/widgets/google-maps.php:126
 msgid "London Eye, London, United Kingdom"
 msgstr "ロンドン・アイ、ロンドン (イギリス)"
 
-#: includes/widgets/google-maps.php:103 includes/widgets/google-maps.php:179
+#: includes/widgets/google-maps.php:103 includes/widgets/google-maps.php:198
 msgid "Map"
 msgstr "地図"
 
@@ -4097,18 +4143,19 @@ msgstr "地図"
 msgid "Google Maps"
 msgstr "Google マップ"
 
+#: core/kits/documents/tabs/settings-lightbox.php:101
+#: core/kits/documents/tabs/settings-lightbox.php:118
+#: includes/widgets/image-gallery.php:255
 #: includes/widgets/image-carousel.php:220
 #: includes/widgets/image-carousel.php:226
 #: includes/widgets/image-carousel.php:611 includes/widgets/image.php:159
-#: includes/widgets/image.php:516 includes/widgets/image-gallery.php:255
-#: core/kits/documents/tabs/settings-lightbox.php:101
-#: core/kits/documents/tabs/settings-lightbox.php:118
+#: includes/widgets/image.php:516
 msgid "Caption"
 msgstr "キャプション"
 
-#: includes/widgets/image-gallery.php:183
 #: core/kits/documents/tabs/theme-style-images.php:21
 #: core/kits/documents/tabs/theme-style-images.php:51
+#: includes/widgets/image-gallery.php:183
 msgid "Images"
 msgstr "画像"
 
@@ -4116,8 +4163,8 @@ msgstr "画像"
 msgid "Random"
 msgstr "ランダム"
 
-#: includes/widgets/image-carousel.php:181 includes/widgets/image.php:194
 #: includes/widgets/image-gallery.php:132
+#: includes/widgets/image-carousel.php:181 includes/widgets/image.php:194
 msgid "Media File"
 msgstr "メディアファイル"
 
@@ -4125,8 +4172,8 @@ msgstr "メディアファイル"
 msgid "Attachment Page"
 msgstr "添付ファイルのページ"
 
-#: includes/widgets/image-carousel.php:95 includes/widgets/image-gallery.php:94
-#: includes/controls/gallery.php:88
+#: includes/controls/gallery.php:88 includes/widgets/image-gallery.php:94
+#: includes/widgets/image-carousel.php:95
 msgid "Add Images"
 msgstr "画像の追加"
 
@@ -4134,35 +4181,35 @@ msgstr "画像の追加"
 msgid "Image Gallery"
 msgstr "画像ギャラリー"
 
-#: includes/widgets/star-rating.php:246 includes/widgets/divider.php:677
+#: includes/widgets/divider.php:677 includes/widgets/star-rating.php:246
 msgid "Gap"
 msgstr "すき間"
 
+#: core/kits/documents/tabs/theme-style-typography.php:133
+#: core/kits/documents/tabs/theme-style-typography.php:163
+#: core/kits/documents/tabs/theme-style-typography.php:209
+#: core/kits/documents/tabs/theme-style-form-fields.php:78
 #: modules/shapes/widgets/text-path.php:389
 #: modules/shapes/widgets/text-path.php:413
 #: modules/shapes/widgets/text-path.php:487
 #: modules/shapes/widgets/text-path.php:507
 #: modules/shapes/widgets/text-path.php:553
 #: modules/shapes/widgets/text-path.php:573
-#: includes/widgets/social-icons.php:185 includes/widgets/social-icons.php:343
+#: includes/controls/box-shadow.php:104 includes/controls/text-shadow.php:97
+#: includes/elements/section.php:976 includes/widgets/icon-box.php:534
+#: includes/widgets/icon-box.php:577 includes/widgets/image-box.php:468
+#: includes/widgets/image-box.php:511 includes/widgets/social-icons.php:185
+#: includes/widgets/social-icons.php:343 includes/widgets/progress.php:183
+#: includes/widgets/progress.php:240 includes/widgets/divider.php:576
+#: includes/widgets/divider.php:711 includes/widgets/image-carousel.php:434
+#: includes/widgets/image-carousel.php:497 includes/widgets/video.php:671
+#: includes/widgets/icon-list.php:368 includes/widgets/icon-list.php:396
+#: includes/widgets/accordion.php:298 includes/widgets/accordion.php:390
+#: includes/widgets/accordion.php:453 includes/widgets/star-rating.php:309
+#: includes/widgets/tabs.php:312 includes/widgets/tabs.php:397
 #: includes/widgets/toggle.php:326 includes/widgets/toggle.php:418
-#: includes/widgets/toggle.php:481 includes/widgets/accordion.php:298
-#: includes/widgets/accordion.php:390 includes/widgets/accordion.php:453
-#: includes/widgets/icon-box.php:534 includes/widgets/icon-box.php:577
-#: includes/widgets/video.php:671 includes/widgets/image-box.php:468
-#: includes/widgets/image-box.php:511 includes/widgets/star-rating.php:309
-#: includes/widgets/image-carousel.php:434
-#: includes/widgets/image-carousel.php:497 includes/widgets/progress.php:183
-#: includes/widgets/progress.php:240 includes/widgets/tabs.php:312
-#: includes/widgets/tabs.php:397 includes/widgets/divider.php:576
-#: includes/widgets/divider.php:711 includes/widgets/icon-list.php:368
-#: includes/widgets/icon-list.php:396 includes/controls/box-shadow.php:104
-#: includes/controls/text-shadow.php:97 includes/elements/section.php:976
-#: core/kits/documents/tabs/theme-style-typography.php:133
-#: core/kits/documents/tabs/theme-style-typography.php:163
-#: core/kits/documents/tabs/theme-style-typography.php:209
-#: core/kits/documents/tabs/theme-style-form-fields.php:78
-#: assets/js/editor.js:36197 assets/js/editor.js:36243
+#: includes/widgets/toggle.php:481 assets/js/editor.js:36197
+#: assets/js/editor.js:36243
 msgid "Color"
 msgstr "色"
 
@@ -4208,13 +4255,13 @@ msgstr "終了ナンバー"
 msgid "Starting Number"
 msgstr "開始ナンバー"
 
-#: includes/widgets/counter.php:45 includes/widgets/counter.php:102
 #: core/kits/documents/tabs/settings-lightbox.php:56
+#: includes/widgets/counter.php:45 includes/widgets/counter.php:102
 msgid "Counter"
 msgstr "カウンター"
 
-#: includes/widgets/video.php:277 includes/widgets/image-carousel.php:253
-#: includes/widgets/audio.php:144
+#: includes/widgets/audio.php:144 includes/widgets/image-carousel.php:253
+#: includes/widgets/video.php:277
 msgid "Autoplay"
 msgstr "自動再生"
 
@@ -4226,81 +4273,80 @@ msgstr "スクロールするスライド"
 msgid "Slides to Show"
 msgstr "表示するスライド"
 
-#: includes/widgets/video.php:562 includes/widgets/image-box.php:95
-#: includes/widgets/image.php:111 includes/widgets/testimonial.php:108
-#: includes/controls/media.php:170
+#: includes/controls/media.php:170 includes/widgets/image-box.php:95
+#: includes/widgets/video.php:562 includes/widgets/image.php:111
+#: includes/widgets/testimonial.php:108
 msgid "Choose Image"
 msgstr "画像の選択"
 
-#: includes/widgets/image-box.php:217 includes/widgets/common.php:450
+#: includes/widgets/common.php:450 includes/widgets/image-box.php:217
 #: includes/widgets/image-carousel.php:513 includes/widgets/image.php:45
 #: includes/widgets/image.php:104 includes/widgets/image.php:247
 #: includes/widgets/testimonial.php:266
 msgid "Image"
 msgstr "画像"
 
-#: includes/widgets/common.php:314 includes/elements/section.php:810
-#: includes/elements/column.php:481
+#: includes/elements/section.php:810 includes/elements/column.php:481
+#: includes/widgets/common.php:314
 msgid "Border"
 msgstr "枠線"
 
-#: includes/widgets/button.php:219 core/dynamic-tags/tag.php:102
+#: core/dynamic-tags/tag.php:102 includes/widgets/button.php:219
 msgid "After"
 msgstr "後"
 
-#: includes/widgets/button.php:218 core/dynamic-tags/tag.php:95
+#: core/dynamic-tags/tag.php:95 includes/widgets/button.php:218
 msgid "Before"
 msgstr "更新前"
 
-#: includes/widgets/icon-box.php:184 includes/widgets/button.php:214
+#: includes/widgets/button.php:214 includes/widgets/icon-box.php:184
 msgid "Icon Position"
 msgstr "アイコンの位置"
 
-#: includes/widgets/social-icons.php:94 includes/widgets/social-icons.php:335
-#: includes/widgets/toggle.php:153 includes/widgets/toggle.php:387
-#: includes/widgets/accordion.php:149 includes/widgets/accordion.php:359
-#: includes/widgets/icon-box.php:95 includes/widgets/icon-box.php:241
-#: includes/widgets/star-rating.php:123 includes/widgets/icon.php:44
+#: includes/widgets/button.php:203 includes/widgets/icon-box.php:95
+#: includes/widgets/icon-box.php:241 includes/widgets/icon.php:44
 #: includes/widgets/icon.php:103 includes/widgets/icon.php:110
-#: includes/widgets/icon.php:195 includes/widgets/button.php:203
-#: includes/widgets/divider.php:487 includes/widgets/divider.php:548
-#: includes/widgets/divider.php:779 includes/widgets/icon-list.php:134
-#: includes/widgets/icon-list.php:388
+#: includes/widgets/icon.php:195 includes/widgets/social-icons.php:94
+#: includes/widgets/social-icons.php:335 includes/widgets/divider.php:487
+#: includes/widgets/divider.php:548 includes/widgets/divider.php:779
+#: includes/widgets/icon-list.php:134 includes/widgets/icon-list.php:388
+#: includes/widgets/accordion.php:149 includes/widgets/accordion.php:359
+#: includes/widgets/star-rating.php:123 includes/widgets/toggle.php:153
+#: includes/widgets/toggle.php:387
 msgid "Icon"
 msgstr "アイコン"
 
-#: modules/shapes/widgets/text-path.php:229
-#: includes/widgets/social-icons.php:385 includes/widgets/icon-box.php:373
-#: includes/widgets/video.php:686 includes/widgets/common.php:481
-#: includes/widgets/star-rating.php:274 includes/widgets/image-carousel.php:414
-#: includes/widgets/image-carousel.php:477 includes/widgets/icon.php:298
-#: includes/widgets/text-editor.php:316 includes/widgets/button.php:192
+#: modules/shapes/widgets/text-path.php:229 includes/widgets/button.php:192
+#: includes/widgets/icon-box.php:373 includes/widgets/icon.php:298
+#: includes/widgets/text-editor.php:316 includes/widgets/common.php:481
+#: includes/widgets/social-icons.php:385 includes/widgets/heading.php:139
 #: includes/widgets/divider.php:617 includes/widgets/divider.php:805
-#: includes/widgets/icon-list.php:425 includes/widgets/heading.php:139
+#: includes/widgets/image-carousel.php:414
+#: includes/widgets/image-carousel.php:477 includes/widgets/video.php:686
+#: includes/widgets/icon-list.php:425 includes/widgets/star-rating.php:274
 msgid "Size"
 msgstr "サイズ"
 
-#: includes/widgets/icon-box.php:480 includes/widgets/image-box.php:414
-#: includes/widgets/star-rating.php:186 includes/widgets/image-carousel.php:638
-#: includes/widgets/image.php:543 includes/widgets/text-editor.php:204
-#: includes/widgets/image-gallery.php:295 includes/widgets/button.php:180
-#: includes/widgets/tabs.php:183 includes/widgets/tabs.php:213
-#: includes/widgets/heading.php:192
+#: includes/widgets/button.php:180 includes/widgets/icon-box.php:480
+#: includes/widgets/text-editor.php:204 includes/widgets/image-gallery.php:295
+#: includes/widgets/image-box.php:414 includes/widgets/heading.php:192
+#: includes/widgets/image-carousel.php:638 includes/widgets/image.php:543
+#: includes/widgets/star-rating.php:186 includes/widgets/tabs.php:183
+#: includes/widgets/tabs.php:213
 msgid "Justified"
 msgstr "均等割付"
 
-#: modules/shapes/widgets/text-path.php:150
-#: includes/widgets/social-icons.php:297 includes/widgets/toggle.php:398
-#: includes/widgets/accordion.php:370 includes/widgets/icon-box.php:464
-#: includes/widgets/image-box.php:398 includes/widgets/star-rating.php:170
-#: includes/widgets/image-carousel.php:622 includes/widgets/icon.php:167
-#: includes/widgets/image.php:134 includes/widgets/image.php:527
+#: modules/shapes/widgets/text-path.php:150 includes/widgets/button.php:164
+#: includes/widgets/icon-box.php:464 includes/widgets/icon.php:167
 #: includes/widgets/text-editor.php:188 includes/widgets/image-gallery.php:279
-#: includes/widgets/button.php:164 includes/widgets/tabs.php:167
+#: includes/widgets/image-box.php:398 includes/widgets/social-icons.php:297
+#: includes/widgets/heading.php:176 includes/widgets/divider.php:448
+#: includes/widgets/image-carousel.php:622 includes/widgets/icon-list.php:238
+#: includes/widgets/icon-list.php:445 includes/widgets/accordion.php:370
+#: includes/widgets/image.php:134 includes/widgets/image.php:527
+#: includes/widgets/star-rating.php:170 includes/widgets/tabs.php:167
 #: includes/widgets/tabs.php:197 includes/widgets/tabs.php:360
-#: includes/widgets/testimonial.php:185 includes/widgets/divider.php:448
-#: includes/widgets/icon-list.php:238 includes/widgets/icon-list.php:445
-#: includes/widgets/heading.php:176
+#: includes/widgets/testimonial.php:185 includes/widgets/toggle.php:398
 msgid "Alignment"
 msgstr "配置"
 
@@ -4329,106 +4375,106 @@ msgstr "小"
 msgid "Button"
 msgstr "ボタン"
 
-#: includes/controls/popover-toggle.php:69
 #: core/common/modules/finder/categories/edit.php:30
+#: includes/controls/popover-toggle.php:69
 msgid "Edit"
 msgstr "編集"
 
-#: includes/widgets/common.php:1032 includes/elements/section.php:1383
-#: includes/elements/column.php:886
+#: includes/elements/section.php:1383 includes/elements/column.php:886
+#: includes/widgets/common.php:1032
 msgid "Hide On Mobile"
 msgstr "モバイルで隠す"
 
-#: includes/widgets/common.php:1019 includes/elements/section.php:1370
-#: includes/elements/column.php:873
+#: includes/elements/section.php:1370 includes/elements/column.php:873
+#: includes/widgets/common.php:1019
 msgid "Hide On Tablet"
 msgstr "タブレットで隠す"
 
-#: includes/widgets/common.php:1006 includes/elements/section.php:1357
-#: includes/elements/column.php:860
+#: includes/elements/section.php:1357 includes/elements/column.php:860
+#: includes/widgets/common.php:1006
 msgid "Hide On Desktop"
 msgstr "デスクトップで隠す"
 
-#: includes/widgets/social-icons.php:471 includes/widgets/icon-box.php:439
-#: includes/widgets/image-box.php:276 includes/widgets/common.php:339
-#: includes/widgets/common.php:376 includes/widgets/image-carousel.php:597
-#: includes/widgets/icon.php:372 includes/widgets/image.php:491
-#: includes/widgets/text-editor.php:358 includes/widgets/image-gallery.php:241
-#: includes/widgets/progress.php:219 includes/widgets/button.php:415
-#: includes/widgets/testimonial.php:304 includes/widgets/divider.php:953
-#: includes/elements/section.php:834 includes/elements/section.php:870
-#: includes/elements/column.php:506 includes/elements/column.php:543
 #: core/kits/documents/tabs/theme-style-images.php:83
 #: core/kits/documents/tabs/theme-style-images.php:154
 #: core/kits/documents/tabs/theme-style-buttons.php:143
 #: core/kits/documents/tabs/theme-style-buttons.php:209
 #: core/kits/documents/tabs/theme-style-form-fields.php:222
+#: includes/elements/section.php:834 includes/elements/section.php:870
+#: includes/elements/column.php:506 includes/elements/column.php:543
+#: includes/widgets/button.php:415 includes/widgets/icon-box.php:439
+#: includes/widgets/icon.php:372 includes/widgets/text-editor.php:358
+#: includes/widgets/image-gallery.php:241 includes/widgets/common.php:339
+#: includes/widgets/common.php:376 includes/widgets/image-box.php:276
+#: includes/widgets/social-icons.php:471 includes/widgets/progress.php:219
+#: includes/widgets/divider.php:953 includes/widgets/image-carousel.php:597
+#: includes/widgets/image.php:491 includes/widgets/testimonial.php:304
 msgid "Border Radius"
 msgstr "枠線の丸み"
 
-#: includes/widgets/icon-box.php:568 includes/widgets/image-box.php:502
-#: includes/widgets/alert.php:253 includes/widgets/image-carousel.php:227
-#: includes/compatibility.php:176
 #: core/kits/documents/tabs/settings-lightbox.php:103
 #: core/kits/documents/tabs/settings-lightbox.php:113
 #: core/kits/documents/tabs/settings-lightbox.php:120
+#: includes/compatibility.php:176 includes/widgets/alert.php:253
+#: includes/widgets/icon-box.php:568 includes/widgets/image-box.php:502
+#: includes/widgets/image-carousel.php:227
 msgid "Description"
 msgstr "説明"
 
-#: includes/widgets/counter.php:197 includes/widgets/counter.php:265
-#: includes/widgets/toggle.php:306 includes/widgets/accordion.php:279
-#: includes/widgets/icon-box.php:508 includes/widgets/image-box.php:442
-#: includes/widgets/alert.php:213 includes/widgets/common.php:117
-#: includes/widgets/star-rating.php:158 includes/widgets/star-rating.php:202
-#: includes/widgets/image-carousel.php:225 includes/widgets/progress.php:95
-#: includes/widgets/tabs.php:303 includes/widgets/testimonial.php:143
-#: includes/widgets/testimonial.php:364 includes/widgets/heading.php:104
-#: includes/widgets/heading.php:111 includes/widgets/heading.php:217
-#: includes/elements/section.php:236 includes/elements/column.php:120
 #: core/base/document.php:1436
 #: core/kits/documents/tabs/settings-lightbox.php:96
 #: core/kits/documents/tabs/settings-lightbox.php:100
 #: core/kits/documents/tabs/settings-lightbox.php:117
+#: includes/elements/section.php:236 includes/elements/column.php:120
+#: includes/widgets/alert.php:213 includes/widgets/icon-box.php:508
+#: includes/widgets/common.php:117 includes/widgets/image-box.php:442
+#: includes/widgets/progress.php:95 includes/widgets/heading.php:104
+#: includes/widgets/heading.php:111 includes/widgets/heading.php:217
+#: includes/widgets/image-carousel.php:225 includes/widgets/counter.php:197
+#: includes/widgets/counter.php:265 includes/widgets/accordion.php:279
+#: includes/widgets/star-rating.php:158 includes/widgets/star-rating.php:202
+#: includes/widgets/tabs.php:303 includes/widgets/testimonial.php:143
+#: includes/widgets/testimonial.php:364 includes/widgets/toggle.php:306
 msgid "Title"
 msgstr "タイトル"
 
-#: includes/widgets/video.php:739 includes/widgets/alert.php:172
-#: includes/widgets/image.php:572 includes/widgets/progress.php:197
-#: includes/widgets/tabs.php:291
+#: core/kits/documents/tabs/settings-lightbox.php:130
 #: core/kits/documents/tabs/theme-style-buttons.php:110
 #: core/kits/documents/tabs/theme-style-buttons.php:176
 #: core/kits/documents/tabs/theme-style-form-fields.php:189
-#: core/kits/documents/tabs/settings-lightbox.php:130
+#: includes/widgets/alert.php:172 includes/widgets/progress.php:197
+#: includes/widgets/video.php:739 includes/widgets/image.php:572
+#: includes/widgets/tabs.php:291
 msgid "Background Color"
 msgstr "背景色"
 
-#: includes/widgets/counter.php:174 includes/widgets/video.php:334
-#: includes/widgets/video.php:349 includes/widgets/video.php:376
-#: includes/widgets/video.php:454 includes/widgets/video.php:468
-#: includes/widgets/video.php:482 includes/widgets/video.php:508
-#: includes/widgets/video.php:553 includes/widgets/alert.php:145
-#: includes/widgets/image-gallery.php:268 includes/widgets/progress.php:143
+#: includes/elements/section.php:1361 includes/elements/section.php:1374
+#: includes/elements/section.php:1387 includes/widgets/alert.php:145
 #: includes/widgets/audio.php:154 includes/widgets/audio.php:165
 #: includes/widgets/audio.php:176 includes/widgets/audio.php:187
 #: includes/widgets/audio.php:201 includes/widgets/audio.php:212
 #: includes/widgets/audio.php:223 includes/widgets/audio.php:234
-#: includes/elements/section.php:1361 includes/elements/section.php:1374
-#: includes/elements/section.php:1387
+#: includes/widgets/image-gallery.php:268 includes/widgets/progress.php:143
+#: includes/widgets/video.php:334 includes/widgets/video.php:349
+#: includes/widgets/video.php:376 includes/widgets/video.php:454
+#: includes/widgets/video.php:468 includes/widgets/video.php:482
+#: includes/widgets/video.php:508 includes/widgets/video.php:553
+#: includes/widgets/counter.php:174
 msgid "Hide"
 msgstr "非表示"
 
-#: includes/widgets/counter.php:173 includes/widgets/video.php:335
-#: includes/widgets/video.php:350 includes/widgets/video.php:377
-#: includes/widgets/video.php:455 includes/widgets/video.php:469
-#: includes/widgets/video.php:483 includes/widgets/video.php:509
-#: includes/widgets/video.php:554 includes/widgets/alert.php:144
-#: includes/widgets/image-gallery.php:267 includes/widgets/progress.php:142
+#: includes/elements/section.php:1362 includes/elements/section.php:1375
+#: includes/elements/section.php:1388 includes/widgets/alert.php:144
 #: includes/widgets/audio.php:155 includes/widgets/audio.php:166
 #: includes/widgets/audio.php:177 includes/widgets/audio.php:188
 #: includes/widgets/audio.php:202 includes/widgets/audio.php:213
 #: includes/widgets/audio.php:224 includes/widgets/audio.php:235
-#: includes/elements/section.php:1362 includes/elements/section.php:1375
-#: includes/elements/section.php:1388
+#: includes/widgets/image-gallery.php:267 includes/widgets/progress.php:142
+#: includes/widgets/video.php:335 includes/widgets/video.php:350
+#: includes/widgets/video.php:377 includes/widgets/video.php:455
+#: includes/widgets/video.php:469 includes/widgets/video.php:483
+#: includes/widgets/video.php:509 includes/widgets/video.php:554
+#: includes/widgets/counter.php:173
 msgid "Show"
 msgstr "表示"
 
@@ -4440,36 +4486,36 @@ msgstr "非表示ボタン"
 msgid "I am a description. Click the edit button to change this text."
 msgstr "これは説明です。編集ボタンをクリックしてテキストを変更してください。"
 
-#: includes/widgets/toggle.php:98 includes/widgets/accordion.php:97
-#: includes/widgets/icon-box.php:141 includes/widgets/image-box.php:118
-#: includes/widgets/alert.php:111 includes/widgets/tabs.php:98
+#: includes/widgets/alert.php:111 includes/widgets/icon-box.php:141
+#: includes/widgets/image-box.php:118 includes/widgets/accordion.php:97
+#: includes/widgets/tabs.php:98 includes/widgets/toggle.php:98
 msgid "Title & Description"
 msgstr "タイトル・説明"
 
-#: includes/widgets/alert.php:102 includes/widgets/progress.php:117
-#: includes/widgets/button.php:127
+#: includes/widgets/button.php:127 includes/widgets/alert.php:102
+#: includes/widgets/progress.php:117
 msgid "Danger"
 msgstr "危険"
 
-#: includes/widgets/alert.php:101 includes/widgets/progress.php:116
-#: includes/widgets/button.php:126
+#: includes/widgets/button.php:126 includes/widgets/alert.php:101
+#: includes/widgets/progress.php:116
 msgid "Warning"
 msgstr "警告"
 
-#: includes/widgets/alert.php:100 includes/widgets/progress.php:115
-#: includes/widgets/button.php:125
+#: includes/widgets/button.php:125 includes/widgets/alert.php:100
+#: includes/widgets/progress.php:115
 msgid "Success"
 msgstr "成功"
 
-#: includes/widgets/alert.php:99 includes/widgets/progress.php:114
-#: includes/widgets/button.php:124
+#: includes/widgets/button.php:124 includes/widgets/alert.php:99
+#: includes/widgets/progress.php:114
 msgid "Info"
 msgstr "情報"
 
 #: includes/template-library/sources/local.php:1638
+#: includes/editor-templates/templates.php:113
+#: includes/elements/section.php:965 includes/widgets/button.php:119
 #: includes/widgets/alert.php:95 includes/widgets/progress.php:109
-#: includes/widgets/button.php:119 includes/editor-templates/templates.php:113
-#: includes/elements/section.php:965
 msgid "Type"
 msgstr "タイプ"
 
@@ -4478,30 +4524,30 @@ msgstr "タイプ"
 msgid "Alert"
 msgstr "アラート"
 
-#: includes/widgets/toggle.php:340 includes/widgets/toggle.php:430
 #: includes/widgets/accordion.php:312 includes/widgets/accordion.php:402
-#: includes/widgets/tabs.php:326
+#: includes/widgets/tabs.php:326 includes/widgets/toggle.php:340
+#: includes/widgets/toggle.php:430
 msgid "Active Color"
 msgstr "有効時の色"
 
-#: includes/widgets/social-icons.php:524 includes/widgets/toggle.php:267
-#: includes/widgets/accordion.php:264 includes/widgets/alert.php:183
-#: includes/widgets/button.php:380 includes/widgets/tabs.php:280
+#: includes/widgets/button.php:380 includes/widgets/alert.php:183
+#: includes/widgets/social-icons.php:524 includes/widgets/accordion.php:264
+#: includes/widgets/tabs.php:280 includes/widgets/toggle.php:267
 msgid "Border Color"
 msgstr "枠線の色"
 
-#: includes/widgets/social-icons.php:324 includes/widgets/counter.php:211
-#: includes/widgets/toggle.php:144 includes/widgets/accordion.php:140
-#: includes/widgets/spacer.php:133 includes/widgets/icon-box.php:108
-#: includes/widgets/video.php:533 includes/widgets/image-box.php:206
-#: includes/widgets/alert.php:153 includes/widgets/image-carousel.php:235
-#: includes/widgets/icon.php:123 includes/widgets/image.php:236
-#: includes/widgets/text-editor.php:263 includes/widgets/image-gallery.php:172
-#: includes/widgets/progress.php:164 includes/widgets/button.php:247
+#: includes/widgets/button.php:247 includes/widgets/alert.php:153
+#: includes/widgets/google-maps.php:187 includes/widgets/audio.php:251
+#: includes/widgets/icon-box.php:108 includes/widgets/icon.php:123
+#: includes/widgets/text-editor.php:263 includes/widgets/spacer.php:133
+#: includes/widgets/image-gallery.php:172 includes/widgets/image-box.php:206
+#: includes/widgets/social-icons.php:324 includes/widgets/progress.php:164
+#: includes/widgets/heading.php:206 includes/widgets/divider.php:501
+#: includes/widgets/divider.php:790 includes/widgets/image-carousel.php:235
+#: includes/widgets/video.php:533 includes/widgets/counter.php:211
+#: includes/widgets/accordion.php:140 includes/widgets/image.php:236
 #: includes/widgets/tabs.php:143 includes/widgets/testimonial.php:209
-#: includes/widgets/divider.php:501 includes/widgets/divider.php:790
-#: includes/widgets/audio.php:251 includes/widgets/google-maps.php:168
-#: includes/widgets/heading.php:206
+#: includes/widgets/toggle.php:144
 msgid "View"
 msgstr "表示"
 
@@ -4550,8 +4596,8 @@ msgstr "Ctrl+C / Ctrl+V でシンプルテキストとして以下の情報を�
 msgid "Copy & Paste Info"
 msgstr "情報をコピー & ペースト"
 
-#: modules/system-info/module.php:128 modules/system-info/module.php:157
 #: core/common/modules/finder/categories/general.php:51
+#: modules/system-info/module.php:128 modules/system-info/module.php:157
 msgid "System Info"
 msgstr "システム情報"
 
@@ -4563,8 +4609,8 @@ msgstr "無効"
 msgid "Active"
 msgstr "有効"
 
-#: includes/widgets/testimonial.php:131 includes/widgets/testimonial.php:319
 #: includes/editor-templates/templates.php:109
+#: includes/widgets/testimonial.php:131 includes/widgets/testimonial.php:319
 msgid "Name"
 msgstr "名前"
 
@@ -4572,26 +4618,26 @@ msgstr "名前"
 msgid "Themes"
 msgstr "テーマ"
 
+#: includes/controls/switcher.php:74 includes/managers/icons.php:340
+#: includes/widgets/audio.php:127 includes/widgets/image-gallery.php:148
 #: includes/widgets/image-carousel.php:151
 #: includes/widgets/image-carousel.php:209
 #: includes/widgets/image-carousel.php:258
 #: includes/widgets/image-carousel.php:272
 #: includes/widgets/image-carousel.php:290
 #: includes/widgets/image-carousel.php:322 includes/widgets/image.php:225
-#: includes/widgets/image-gallery.php:148 includes/widgets/audio.php:127
-#: includes/controls/switcher.php:74 includes/managers/icons.php:340
 #: assets/js/editor.js:10370
 msgid "No"
 msgstr "いいえ"
 
+#: includes/controls/switcher.php:75 includes/managers/icons.php:341
+#: includes/widgets/audio.php:126 includes/widgets/image-gallery.php:147
 #: includes/widgets/image-carousel.php:152
 #: includes/widgets/image-carousel.php:208
 #: includes/widgets/image-carousel.php:257
 #: includes/widgets/image-carousel.php:271
 #: includes/widgets/image-carousel.php:289
 #: includes/widgets/image-carousel.php:321 includes/widgets/image.php:224
-#: includes/widgets/image-gallery.php:147 includes/widgets/audio.php:126
-#: includes/controls/switcher.php:75 includes/managers/icons.php:341
 #: assets/js/editor.js:10369
 msgid "Yes"
 msgstr "はい"
@@ -4604,8 +4650,8 @@ msgstr "権限グループの除外"
 msgid "Post Types"
 msgstr "投稿タイプ"
 
-#: core/common/modules/finder/categories/settings.php:46
 #: core/base/document.php:1428
+#: core/common/modules/finder/categories/settings.php:46
 msgid "General Settings"
 msgstr "一般設定"
 
@@ -4625,28 +4671,28 @@ msgstr "小見出し"
 msgid "Primary Headline"
 msgstr "主見出し"
 
-#: core/kits/documents/tabs/global-colors.php:93
-#: core/kits/documents/tabs/global-typography.php:144 core/schemes/color.php:96
+#: core/schemes/color.php:96 core/kits/documents/tabs/global-colors.php:93
+#: core/kits/documents/tabs/global-typography.php:144
 msgid "Accent"
 msgstr "アクセント"
 
+#: core/schemes/color.php:95 core/kits/documents/tabs/global-colors.php:88
+#: core/kits/documents/tabs/global-typography.php:137
 #: modules/shapes/widgets/text-path.php:93
 #: modules/shapes/widgets/text-path.php:296 includes/widgets/button.php:136
 #: includes/widgets/divider.php:483 includes/widgets/divider.php:510
 #: includes/widgets/divider.php:700 includes/widgets/icon-list.php:120
 #: includes/widgets/icon-list.php:473
-#: core/kits/documents/tabs/global-colors.php:88
-#: core/kits/documents/tabs/global-typography.php:137 core/schemes/color.php:95
 msgid "Text"
 msgstr "テキスト"
 
-#: core/kits/documents/tabs/global-colors.php:83
-#: core/kits/documents/tabs/global-typography.php:130 core/schemes/color.php:94
+#: core/schemes/color.php:94 core/kits/documents/tabs/global-colors.php:83
+#: core/kits/documents/tabs/global-typography.php:130
 msgid "Secondary"
 msgstr "サブ"
 
-#: core/kits/documents/tabs/global-colors.php:78
-#: core/kits/documents/tabs/global-typography.php:123 core/schemes/color.php:93
+#: core/schemes/color.php:93 core/kits/documents/tabs/global-colors.php:78
+#: core/kits/documents/tabs/global-typography.php:123
 msgid "Primary"
 msgstr "メイン"
 
@@ -4671,9 +4717,9 @@ msgstr "表示状態"
 msgid "Content Position"
 msgstr "コンテンツ配置"
 
-#: includes/widgets/icon-box.php:497 includes/widgets/image-box.php:431
 #: includes/elements/section.php:428 includes/elements/section.php:451
-#: includes/elements/column.php:168
+#: includes/elements/column.php:168 includes/widgets/icon-box.php:497
+#: includes/widgets/image-box.php:431
 msgid "Middle"
 msgstr "中央"
 
@@ -4697,10 +4743,10 @@ msgstr "最小の高さ"
 msgid "Fit To Screen"
 msgstr "画面幅に合わせる"
 
-#: includes/widgets/image.php:325 includes/widgets/progress.php:208
-#: includes/widgets/google-maps.php:146 includes/widgets/icon-list.php:339
 #: includes/controls/image-dimensions.php:102 includes/elements/section.php:332
 #: includes/elements/section.php:381 includes/elements/section.php:1019
+#: includes/widgets/google-maps.php:165 includes/widgets/progress.php:208
+#: includes/widgets/icon-list.php:339 includes/widgets/image.php:325
 msgid "Height"
 msgstr "高さ"
 
@@ -4716,18 +4762,18 @@ msgstr "幅狭"
 msgid "No Gap"
 msgstr "すき間なし"
 
-#: includes/widgets/text-editor.php:149 includes/elements/section.php:281
+#: includes/elements/section.php:281 includes/widgets/text-editor.php:149
 msgid "Columns Gap"
 msgstr "カラムギャップ"
 
-#: includes/widgets/video.php:773 includes/elements/section.php:245
-#: includes/elements/section.php:259
 #: core/kits/documents/tabs/settings-layout.php:55
+#: includes/elements/section.php:245 includes/elements/section.php:259
+#: includes/widgets/video.php:773
 msgid "Content Width"
 msgstr "コンテンツの幅"
 
-#: includes/widgets/common.php:669 includes/widgets/icon-list.php:195
-#: includes/elements/section.php:250
+#: includes/elements/section.php:250 includes/widgets/common.php:669
+#: includes/widgets/icon-list.php:195
 msgid "Full Width"
 msgstr "全幅"
 
@@ -4736,16 +4782,18 @@ msgid "Boxed"
 msgstr "ボックス"
 
 #: modules/shapes/widgets/text-path.php:519
-#: modules/shapes/widgets/text-path.php:585 includes/widgets/image-box.php:248
-#: includes/widgets/common.php:664 includes/widgets/image.php:255
-#: includes/widgets/divider.php:421 includes/widgets/icon-list.php:321
+#: modules/shapes/widgets/text-path.php:585
 #: includes/controls/image-dimensions.php:96 includes/elements/section.php:990
+#: includes/widgets/common.php:664 includes/widgets/image-box.php:248
+#: includes/widgets/divider.php:421 includes/widgets/icon-list.php:321
+#: includes/widgets/image.php:255
 msgid "Width"
 msgstr "幅"
 
-#: includes/widgets/icon-list.php:95 includes/managers/controls.php:303
-#: includes/elements/section.php:227 includes/elements/column.php:111
-#: core/kits/documents/tabs/settings-layout.php:24 assets/js/editor.js:23946
+#: core/kits/documents/tabs/settings-layout.php:24
+#: includes/managers/controls.php:303 includes/elements/section.php:227
+#: includes/elements/column.php:111 includes/widgets/icon-list.php:95
+#: assets/js/editor.js:23946
 msgid "Layout"
 msgstr "レイアウト"
 
@@ -4753,43 +4801,43 @@ msgstr "レイアウト"
 msgid "Column Width"
 msgstr "カラム幅"
 
-#: includes/widgets/common.php:178 includes/elements/section.php:1238
-#: includes/elements/column.php:753
+#: includes/elements/section.php:1238 includes/elements/column.php:753
+#: includes/widgets/common.php:178
 msgid "CSS Classes"
 msgstr "CSS クラス"
 
-#: includes/widgets/social-icons.php:402 includes/widgets/toggle.php:373
-#: includes/widgets/toggle.php:514 includes/widgets/accordion.php:345
-#: includes/widgets/accordion.php:486 includes/widgets/icon-box.php:390
-#: includes/widgets/common.php:138 includes/widgets/icon.php:316
-#: includes/widgets/button.php:435 includes/widgets/divider.php:822
-#: includes/elements/section.php:1199 includes/elements/column.php:714
 #: core/document-types/page-base.php:132
 #: core/kits/documents/tabs/theme-style-buttons.php:225
 #: core/kits/documents/tabs/theme-style-form-fields.php:160
+#: includes/elements/section.php:1199 includes/elements/column.php:714
+#: includes/widgets/button.php:435 includes/widgets/icon-box.php:390
+#: includes/widgets/icon.php:316 includes/widgets/common.php:138
+#: includes/widgets/social-icons.php:402 includes/widgets/divider.php:822
+#: includes/widgets/accordion.php:345 includes/widgets/accordion.php:486
+#: includes/widgets/toggle.php:373 includes/widgets/toggle.php:514
 msgid "Padding"
 msgstr "パディング"
 
-#: includes/widgets/common.php:126 includes/elements/section.php:1180
-#: includes/elements/column.php:702
+#: includes/elements/section.php:1180 includes/elements/column.php:702
+#: includes/widgets/common.php:126
 msgid "Margin"
 msgstr "マージン"
 
-#: modules/shapes/widgets/text-path.php:159
-#: includes/widgets/social-icons.php:305 includes/widgets/icon-box.php:472
-#: includes/widgets/video.php:796 includes/widgets/image-box.php:406
-#: includes/widgets/common.php:731 includes/widgets/star-rating.php:178
-#: includes/widgets/image-carousel.php:529
-#: includes/widgets/image-carousel.php:630 includes/widgets/icon.php:175
-#: includes/widgets/image.php:142 includes/widgets/image.php:535
-#: includes/widgets/text-editor.php:196 includes/widgets/image-gallery.php:287
-#: includes/widgets/button.php:172 includes/widgets/tabs.php:175
-#: includes/widgets/tabs.php:205 includes/widgets/tabs.php:368
-#: includes/widgets/testimonial.php:194 includes/widgets/divider.php:456
-#: includes/widgets/divider.php:744 includes/widgets/divider.php:884
-#: includes/widgets/icon-list.php:246 includes/widgets/icon-list.php:453
-#: includes/widgets/heading.php:184 includes/elements/section.php:1152
+#: modules/shapes/widgets/text-path.php:159 includes/elements/section.php:1152
 #: includes/elements/column.php:196 includes/elements/column.php:673
+#: includes/widgets/button.php:172 includes/widgets/icon-box.php:472
+#: includes/widgets/icon.php:175 includes/widgets/text-editor.php:196
+#: includes/widgets/image-gallery.php:287 includes/widgets/common.php:731
+#: includes/widgets/image-box.php:406 includes/widgets/social-icons.php:305
+#: includes/widgets/heading.php:184 includes/widgets/divider.php:456
+#: includes/widgets/divider.php:744 includes/widgets/divider.php:884
+#: includes/widgets/image-carousel.php:529
+#: includes/widgets/image-carousel.php:630 includes/widgets/video.php:796
+#: includes/widgets/icon-list.php:246 includes/widgets/icon-list.php:453
+#: includes/widgets/image.php:142 includes/widgets/image.php:535
+#: includes/widgets/star-rating.php:178 includes/widgets/tabs.php:175
+#: includes/widgets/tabs.php:205 includes/widgets/tabs.php:368
+#: includes/widgets/testimonial.php:194
 msgid "Center"
 msgstr "中央"
 
@@ -4809,25 +4857,25 @@ msgstr "リンク色"
 msgid "Heading Color"
 msgstr "見出しの色"
 
-#: includes/widgets/counter.php:230 includes/widgets/counter.php:273
-#: includes/widgets/alert.php:221 includes/widgets/alert.php:261
-#: includes/widgets/star-rating.php:213 includes/widgets/image-carousel.php:652
-#: includes/widgets/image.php:557 includes/widgets/text-editor.php:217
-#: includes/widgets/image-gallery.php:312 includes/widgets/progress.php:280
-#: includes/widgets/button.php:310 includes/widgets/button.php:352
-#: includes/widgets/testimonial.php:229 includes/widgets/testimonial.php:327
-#: includes/widgets/testimonial.php:372 includes/widgets/icon-list.php:481
-#: includes/widgets/heading.php:225 includes/elements/section.php:1108
-#: includes/elements/column.php:629
 #: core/kits/documents/tabs/theme-style-typography.php:56
+#: core/kits/documents/tabs/settings-lightbox.php:163
 #: core/kits/documents/tabs/theme-style-buttons.php:98
 #: core/kits/documents/tabs/theme-style-buttons.php:164
 #: core/kits/documents/tabs/theme-style-form-fields.php:177
-#: core/kits/documents/tabs/settings-lightbox.php:163
+#: includes/elements/section.php:1108 includes/elements/column.php:629
+#: includes/widgets/button.php:310 includes/widgets/button.php:352
+#: includes/widgets/alert.php:221 includes/widgets/alert.php:261
+#: includes/widgets/text-editor.php:217 includes/widgets/image-gallery.php:312
+#: includes/widgets/progress.php:280 includes/widgets/heading.php:225
+#: includes/widgets/image-carousel.php:652 includes/widgets/icon-list.php:481
+#: includes/widgets/counter.php:230 includes/widgets/counter.php:273
+#: includes/widgets/image.php:557 includes/widgets/star-rating.php:213
+#: includes/widgets/testimonial.php:229 includes/widgets/testimonial.php:327
+#: includes/widgets/testimonial.php:372
 msgid "Text Color"
 msgstr "文字色"
 
-#: includes/elements/section.php:1087 includes/elements/column.php:607
+#: core/schemes/typography.php:64
 #: core/kits/documents/tabs/theme-style-typography.php:19
 #: core/kits/documents/tabs/theme-style-typography.php:38
 #: core/kits/documents/tabs/theme-style-typography.php:68
@@ -4837,8 +4885,8 @@ msgstr "文字色"
 #: core/kits/documents/tabs/theme-style-buttons.php:72
 #: core/kits/documents/tabs/theme-style-form-fields.php:90
 #: core/kits/documents/tabs/theme-style-form-fields.php:108
-#: core/schemes/typography.php:64 assets/js/editor.js:29808
-#: assets/js/editor-modules.js:4738
+#: includes/elements/section.php:1087 includes/elements/column.php:607
+#: assets/js/editor-modules.js:4738 assets/js/editor.js:29808
 msgid "Typography"
 msgstr "タイポグラフィ"
 
@@ -4855,38 +4903,37 @@ msgstr "セクション"
 msgid "Structure"
 msgstr "構造"
 
-#: includes/widgets/common.php:989 includes/managers/controls.php:302
-#: includes/elements/section.php:1309 includes/elements/column.php:843
+#: includes/managers/controls.php:302 includes/elements/section.php:1309
+#: includes/elements/column.php:843 includes/widgets/common.php:989
 msgid "Responsive"
 msgstr "レスポンシブデザイン"
 
-#: includes/widgets/common.php:108 includes/managers/controls.php:301
-#: includes/elements/section.php:1172 includes/elements/column.php:693
-#: includes/settings/settings.php:466
 #: core/common/modules/finder/categories/settings.php:51
-#: core/dynamic-tags/tag.php:88 assets/js/editor.js:9738
-#: assets/js/editor.js:23943
+#: core/dynamic-tags/tag.php:88 includes/settings/settings.php:482
+#: includes/managers/controls.php:301 includes/elements/section.php:1172
+#: includes/elements/column.php:693 includes/widgets/common.php:108
+#: assets/js/editor.js:9738 assets/js/editor.js:23943
 msgid "Advanced"
 msgstr "高度な設定"
 
+#: includes/settings/settings.php:446 includes/managers/controls.php:300
 #: includes/widgets/divider.php:363 includes/widgets/icon-list.php:275
-#: includes/managers/controls.php:300 includes/settings/settings.php:446
 #: assets/js/editor.js:9735 assets/js/editor.js:23940
 msgid "Style"
 msgstr "スタイル"
 
-#: includes/widgets/toggle.php:111 includes/widgets/toggle.php:462
-#: includes/widgets/accordion.php:110 includes/widgets/accordion.php:434
+#: includes/managers/controls.php:299 includes/widgets/alert.php:125
 #: includes/widgets/icon-box.php:456 includes/widgets/image-box.php:132
-#: includes/widgets/image-box.php:390 includes/widgets/alert.php:125
-#: includes/widgets/tabs.php:112 includes/widgets/tabs.php:388
-#: includes/widgets/testimonial.php:95 includes/widgets/testimonial.php:221
-#: includes/managers/controls.php:299 assets/js/editor.js:23937
+#: includes/widgets/image-box.php:390 includes/widgets/accordion.php:110
+#: includes/widgets/accordion.php:434 includes/widgets/tabs.php:112
+#: includes/widgets/tabs.php:388 includes/widgets/testimonial.php:95
+#: includes/widgets/testimonial.php:221 includes/widgets/toggle.php:111
+#: includes/widgets/toggle.php:462 assets/js/editor.js:23937
 msgid "Content"
 msgstr "コンテンツ"
 
-#: includes/widgets/social-icons.php:272 includes/widgets/text-editor.php:136
-#: includes/widgets/image-gallery.php:118
+#: includes/widgets/text-editor.php:136 includes/widgets/image-gallery.php:118
+#: includes/widgets/social-icons.php:272
 msgid "Columns"
 msgstr "カラム"
 
@@ -4902,18 +4949,20 @@ msgstr "より多くのパレット"
 msgid "Color Palette"
 msgstr "カラーパレット"
 
+#: core/schemes/base-ui.php:119
 #: modules/history/views/revisions-panel-template.php:18
 #: includes/controls/image-dimensions.php:104
-#: includes/editor-templates/panel.php:151 core/schemes/base-ui.php:119
+#: includes/editor-templates/panel.php:151
 msgid "Apply"
 msgstr "適用"
 
+#: core/schemes/base-ui.php:115
 #: modules/history/views/revisions-panel-template.php:13
-#: core/schemes/base-ui.php:115 assets/js/editor.js:5763
+#: assets/js/editor.js:5763
 msgid "Discard"
 msgstr "破棄"
 
-#: includes/controls/structure.php:66 core/schemes/base-ui.php:109
+#: core/schemes/base-ui.php:109 includes/controls/structure.php:66
 msgid "Reset"
 msgstr "リセット"
 
@@ -4921,11 +4970,11 @@ msgstr "リセット"
 msgid "Preview"
 msgstr "プレビュー"
 
-#: includes/editor-templates/hotkeys.php:75
 #: includes/editor-templates/templates.php:18
 #: includes/editor-templates/templates.php:19
 #: includes/editor-templates/templates.php:216
-#: includes/editor-templates/templates.php:227 assets/js/editor.js:5762
+#: includes/editor-templates/templates.php:227
+#: includes/editor-templates/hotkeys.php:75 assets/js/editor.js:5762
 msgid "Save"
 msgstr "保存"
 
@@ -4933,7 +4982,7 @@ msgstr "保存"
 msgid "Help"
 msgstr "ヘルプ"
 
-#: includes/elements/section.php:1317 core/breakpoints/manager.php:164
+#: core/breakpoints/manager.php:164 includes/elements/section.php:1317
 msgid "Tablet"
 msgstr "タブレット"
 
@@ -4970,20 +5019,19 @@ msgstr "ウィジェットの検索..."
 msgid "Add New Section"
 msgstr "新しいセクションの追加"
 
-#: modules/gutenberg/module.php:121
+#: core/admin/admin.php:174 modules/gutenberg/module.php:121
 #: includes/editor-templates/editor-wrapper.php:50
-#: includes/editor-templates/templates.php:50 core/admin/admin.php:174
+#: includes/editor-templates/templates.php:50
 msgid "Loading"
 msgstr "読み込み中"
 
 #. Plugin Name of the plugin
-#: modules/compatibility-tag/module.php:36 includes/plugin.php:768
-#: includes/editor-templates/editor-wrapper.php:30
+#: core/upgrade/manager.php:36 core/documents-manager.php:354
+#: core/app/view.php:21 core/admin/admin.php:224 core/admin/admin.php:336
+#: core/admin/admin.php:394 modules/compatibility-tag/module.php:36
 #: includes/settings/settings.php:76 includes/settings/settings.php:77
-#: includes/settings/settings.php:538 core/app/view.php:21
-#: core/upgrade/manager.php:36 core/admin/admin.php:224
-#: core/admin/admin.php:336 core/admin/admin.php:394
-#: core/documents-manager.php:354
+#: includes/settings/settings.php:554
+#: includes/editor-templates/editor-wrapper.php:30 includes/plugin.php:768
 msgid "Elementor"
 msgstr "Elementor"
 
@@ -4991,12 +5039,12 @@ msgstr "Elementor"
 msgid "Add Item"
 msgstr "項目を追加"
 
-#: includes/editor-templates/hotkeys.php:60
+#: core/kits/views/trash-kit-confirmation.php:27
 #: includes/editor-templates/templates.php:183
-#: core/kits/views/trash-kit-confirmation.php:27 assets/js/editor.js:10627
-#: assets/js/editor.js:13533 assets/js/editor.js:17084
-#: assets/js/editor.js:18512 assets/js/editor.js:36255
-#: assets/js/editor-document.js:17704
+#: includes/editor-templates/hotkeys.php:60 assets/js/editor-document.js:17704
+#: assets/js/editor.js:10627 assets/js/editor.js:13533
+#: assets/js/editor.js:17084 assets/js/editor.js:18512
+#: assets/js/editor.js:36255
 msgid "Delete"
 msgstr "削除"
 
@@ -5004,12 +5052,12 @@ msgstr "削除"
 msgid "Select Icon"
 msgstr "アイコンを選択"
 
-#: modules/shapes/module.php:27 includes/widgets/social-icons.php:190
-#: includes/widgets/social-icons.php:348 includes/widgets/common.php:71
-#: includes/widgets/common.php:486 includes/widgets/common.php:547
-#: includes/widgets/common.php:671 includes/widgets/image-carousel.php:553
-#: includes/widgets/image-gallery.php:195 includes/elements/section.php:291
-#: includes/maintenance-mode.php:226 assets/js/editor.js:33637
+#: modules/shapes/module.php:27 includes/elements/section.php:291
+#: includes/maintenance-mode.php:226 includes/widgets/image-gallery.php:195
+#: includes/widgets/common.php:71 includes/widgets/common.php:486
+#: includes/widgets/common.php:547 includes/widgets/common.php:671
+#: includes/widgets/social-icons.php:190 includes/widgets/social-icons.php:348
+#: includes/widgets/image-carousel.php:553 assets/js/editor.js:33637
 msgid "Custom"
 msgstr "カスタム"
 
@@ -5028,22 +5076,22 @@ msgctxt "Typography Control"
 msgid "Line-Height"
 msgstr "行の高さ"
 
-#: modules/shapes/widgets/text-path.php:382
-#: modules/shapes/widgets/text-path.php:480 includes/widgets/icon-box.php:261
-#: includes/widgets/image-box.php:297 includes/widgets/common.php:216
-#: includes/widgets/common.php:257 includes/widgets/common.php:324
-#: includes/widgets/icon.php:205 includes/widgets/image.php:386
-#: includes/widgets/button.php:303 includes/widgets/google-maps.php:188
-#: includes/widgets/heading.php:261 includes/elements/section.php:564
-#: includes/elements/section.php:637 includes/elements/section.php:701
-#: includes/elements/section.php:820 includes/elements/section.php:1277
-#: includes/elements/column.php:262 includes/elements/column.php:339
-#: includes/elements/column.php:388 includes/elements/column.php:491
-#: includes/elements/column.php:812
 #: core/kits/documents/tabs/theme-style-images.php:63
 #: core/kits/documents/tabs/theme-style-typography.php:126
 #: core/kits/documents/tabs/theme-style-buttons.php:91
 #: core/kits/documents/tabs/theme-style-form-fields.php:119
+#: modules/shapes/widgets/text-path.php:382
+#: modules/shapes/widgets/text-path.php:480 includes/elements/section.php:564
+#: includes/elements/section.php:637 includes/elements/section.php:701
+#: includes/elements/section.php:820 includes/elements/section.php:1277
+#: includes/elements/column.php:262 includes/elements/column.php:339
+#: includes/elements/column.php:388 includes/elements/column.php:491
+#: includes/elements/column.php:812 includes/widgets/button.php:303
+#: includes/widgets/google-maps.php:207 includes/widgets/icon-box.php:261
+#: includes/widgets/icon.php:205 includes/widgets/common.php:216
+#: includes/widgets/common.php:257 includes/widgets/common.php:324
+#: includes/widgets/image-box.php:297 includes/widgets/heading.php:261
+#: includes/widgets/image.php:386
 msgid "Normal"
 msgstr "通常"
 
@@ -5094,21 +5142,21 @@ msgstr "ドット"
 msgid "Double"
 msgstr "ダブル"
 
-#: includes/widgets/star-rating.php:143 includes/widgets/divider.php:320
-#: includes/widgets/icon-list.php:278
+#: includes/widgets/divider.php:320 includes/widgets/icon-list.php:278
+#: includes/widgets/star-rating.php:143
 msgid "Solid"
 msgstr "単色"
 
+#: core/kits/documents/tabs/settings-lightbox.php:99
+#: core/kits/documents/tabs/settings-lightbox.php:116
+#: includes/controls/animation.php:147 includes/controls/icons.php:109
+#: includes/controls/icons.php:111 includes/controls/groups/border.php:63
+#: includes/controls/hover-animation.php:119 includes/elements/section.php:942
+#: includes/widgets/image-gallery.php:134 includes/widgets/divider.php:479
 #: includes/widgets/image-carousel.php:167
 #: includes/widgets/image-carousel.php:180
 #: includes/widgets/image-carousel.php:224 includes/widgets/image.php:162
-#: includes/widgets/image.php:193 includes/widgets/image-gallery.php:134
-#: includes/widgets/divider.php:479 includes/controls/icons.php:109
-#: includes/controls/icons.php:111 includes/controls/groups/border.php:63
-#: includes/controls/hover-animation.php:119
-#: includes/controls/animation.php:147 includes/elements/section.php:942
-#: core/kits/documents/tabs/settings-lightbox.php:99
-#: core/kits/documents/tabs/settings-lightbox.php:116
+#: includes/widgets/image.php:193
 msgid "None"
 msgstr "なし"
 
@@ -5290,106 +5338,103 @@ msgstr "Google"
 msgid "System"
 msgstr "システム"
 
-#: modules/shapes/widgets/text-path.php:136
-#: includes/widgets/social-icons.php:170 includes/widgets/icon-box.php:171
-#: includes/widgets/video.php:126 includes/widgets/video.php:148
-#: includes/widgets/video.php:169 includes/widgets/image-box.php:148
-#: includes/widgets/image-carousel.php:176
-#: includes/widgets/image-carousel.php:190 includes/widgets/icon.php:155
-#: includes/widgets/image.php:189 includes/widgets/image.php:203
-#: includes/widgets/image-gallery.php:128 includes/widgets/button.php:149
-#: includes/widgets/testimonial.php:155 includes/widgets/audio.php:103
-#: includes/widgets/icon-list.php:147 includes/widgets/heading.php:124
 #: core/kits/documents/tabs/theme-style-typography.php:116
+#: modules/shapes/widgets/text-path.php:136 includes/widgets/button.php:149
+#: includes/widgets/audio.php:103 includes/widgets/icon-box.php:171
+#: includes/widgets/icon.php:155 includes/widgets/image-gallery.php:128
+#: includes/widgets/image-box.php:148 includes/widgets/social-icons.php:170
+#: includes/widgets/heading.php:124 includes/widgets/image-carousel.php:176
+#: includes/widgets/image-carousel.php:190 includes/widgets/video.php:126
+#: includes/widgets/video.php:148 includes/widgets/video.php:169
+#: includes/widgets/icon-list.php:147 includes/widgets/image.php:189
+#: includes/widgets/image.php:203 includes/widgets/testimonial.php:155
 msgid "Link"
 msgstr "リンク"
 
-#: modules/shapes/widgets/text-path.php:155
-#: includes/widgets/social-icons.php:301 includes/widgets/icon-box.php:189
-#: includes/widgets/icon-box.php:468 includes/widgets/image-box.php:166
-#: includes/widgets/image-box.php:402 includes/widgets/common.php:778
-#: includes/widgets/common.php:779 includes/widgets/star-rating.php:174
-#: includes/widgets/image-carousel.php:363
-#: includes/widgets/image-carousel.php:626 includes/widgets/icon.php:171
-#: includes/widgets/image.php:138 includes/widgets/image.php:531
-#: includes/widgets/text-editor.php:192 includes/widgets/image-gallery.php:283
-#: includes/widgets/button.php:168 includes/widgets/tabs.php:364
-#: includes/widgets/testimonial.php:190 includes/widgets/divider.php:452
-#: includes/widgets/divider.php:740 includes/widgets/divider.php:880
-#: includes/widgets/icon-list.php:242 includes/widgets/icon-list.php:449
-#: includes/widgets/heading.php:180 includes/controls/dimensions.php:91
+#: modules/shapes/widgets/text-path.php:155 includes/controls/dimensions.php:91
 #: includes/elements/section.php:1148 includes/elements/column.php:669
+#: includes/widgets/button.php:168 includes/widgets/icon-box.php:189
+#: includes/widgets/icon-box.php:468 includes/widgets/icon.php:171
+#: includes/widgets/text-editor.php:192 includes/widgets/image-gallery.php:283
+#: includes/widgets/common.php:778 includes/widgets/common.php:779
+#: includes/widgets/image-box.php:166 includes/widgets/image-box.php:402
+#: includes/widgets/social-icons.php:301 includes/widgets/heading.php:180
+#: includes/widgets/divider.php:452 includes/widgets/divider.php:740
+#: includes/widgets/divider.php:880 includes/widgets/image-carousel.php:363
+#: includes/widgets/image-carousel.php:626 includes/widgets/icon-list.php:242
+#: includes/widgets/icon-list.php:449 includes/widgets/image.php:138
+#: includes/widgets/image.php:531 includes/widgets/star-rating.php:174
+#: includes/widgets/tabs.php:364 includes/widgets/testimonial.php:190
 msgid "Left"
 msgstr "左"
 
-#: includes/widgets/icon-box.php:498 includes/widgets/image-box.php:432
-#: includes/widgets/common.php:897 includes/controls/dimensions.php:90
-#: includes/elements/section.php:429 includes/elements/section.php:452
-#: includes/elements/section.php:951 includes/elements/column.php:169
+#: includes/controls/dimensions.php:90 includes/elements/section.php:429
+#: includes/elements/section.php:452 includes/elements/section.php:951
+#: includes/elements/column.php:169 includes/widgets/icon-box.php:498
+#: includes/widgets/common.php:897 includes/widgets/image-box.php:432
 msgid "Bottom"
 msgstr "下"
 
-#: modules/shapes/widgets/text-path.php:163
-#: includes/widgets/social-icons.php:309 includes/widgets/icon-box.php:197
-#: includes/widgets/icon-box.php:476 includes/widgets/image-box.php:174
-#: includes/widgets/image-box.php:410 includes/widgets/common.php:778
-#: includes/widgets/common.php:779 includes/widgets/star-rating.php:182
-#: includes/widgets/image-carousel.php:364
-#: includes/widgets/image-carousel.php:634 includes/widgets/icon.php:179
-#: includes/widgets/image.php:146 includes/widgets/image.php:539
-#: includes/widgets/text-editor.php:200 includes/widgets/image-gallery.php:291
-#: includes/widgets/button.php:176 includes/widgets/tabs.php:372
-#: includes/widgets/testimonial.php:198 includes/widgets/divider.php:460
-#: includes/widgets/divider.php:748 includes/widgets/divider.php:888
-#: includes/widgets/icon-list.php:250 includes/widgets/icon-list.php:457
-#: includes/widgets/heading.php:188 includes/controls/dimensions.php:89
+#: modules/shapes/widgets/text-path.php:163 includes/controls/dimensions.php:89
 #: includes/elements/section.php:1156 includes/elements/column.php:677
+#: includes/widgets/button.php:176 includes/widgets/icon-box.php:197
+#: includes/widgets/icon-box.php:476 includes/widgets/icon.php:179
+#: includes/widgets/text-editor.php:200 includes/widgets/image-gallery.php:291
+#: includes/widgets/common.php:778 includes/widgets/common.php:779
+#: includes/widgets/image-box.php:174 includes/widgets/image-box.php:410
+#: includes/widgets/social-icons.php:309 includes/widgets/heading.php:188
+#: includes/widgets/divider.php:460 includes/widgets/divider.php:748
+#: includes/widgets/divider.php:888 includes/widgets/image-carousel.php:364
+#: includes/widgets/image-carousel.php:634 includes/widgets/icon-list.php:250
+#: includes/widgets/icon-list.php:457 includes/widgets/image.php:146
+#: includes/widgets/image.php:539 includes/widgets/star-rating.php:182
+#: includes/widgets/tabs.php:372 includes/widgets/testimonial.php:198
 msgid "Right"
 msgstr "右"
 
-#: includes/widgets/icon-box.php:193 includes/widgets/icon-box.php:496
-#: includes/widgets/video.php:797 includes/widgets/image-box.php:170
-#: includes/widgets/image-box.php:430 includes/widgets/common.php:893
-#: includes/widgets/testimonial.php:172 includes/controls/dimensions.php:88
-#: includes/elements/section.php:427 includes/elements/section.php:450
-#: includes/elements/section.php:950 includes/elements/column.php:167
+#: includes/controls/dimensions.php:88 includes/elements/section.php:427
+#: includes/elements/section.php:450 includes/elements/section.php:950
+#: includes/elements/column.php:167 includes/widgets/icon-box.php:193
+#: includes/widgets/icon-box.php:496 includes/widgets/common.php:893
+#: includes/widgets/image-box.php:170 includes/widgets/image-box.php:430
+#: includes/widgets/video.php:797 includes/widgets/testimonial.php:172
 msgid "Top"
 msgstr "上"
 
-#: modules/page-templates/module.php:296
-#: modules/shapes/widgets/text-path.php:181 includes/widgets/icon-box.php:111
-#: includes/widgets/common.php:668 includes/widgets/common.php:769
-#: includes/widgets/image-carousel.php:122
-#: includes/widgets/image-carousel.php:135
-#: includes/widgets/image-carousel.php:207
-#: includes/widgets/image-carousel.php:552 includes/widgets/icon.php:126
-#: includes/widgets/image.php:223 includes/widgets/image.php:362
-#: includes/widgets/text-editor.php:131 includes/widgets/text-editor.php:266
-#: includes/widgets/image-gallery.php:146
-#: includes/widgets/image-gallery.php:162
-#: includes/widgets/image-gallery.php:194 includes/widgets/progress.php:113
-#: includes/widgets/button.php:123 includes/widgets/divider.php:793
-#: includes/widgets/icon-list.php:100 includes/widgets/heading.php:143
+#: core/experiments/manager.php:271 modules/page-templates/module.php:296
+#: modules/shapes/widgets/text-path.php:181 includes/settings/settings.php:527
+#: includes/base/widget-base.php:247 includes/controls/font.php:67
+#: includes/controls/animation.php:146
 #: includes/controls/groups/background.php:714
 #: includes/controls/groups/background.php:733
 #: includes/controls/groups/typography.php:132
 #: includes/controls/groups/typography.php:151
 #: includes/controls/groups/typography.php:164
-#: includes/controls/groups/typography.php:176 includes/controls/font.php:67
-#: includes/controls/animation.php:146 includes/editor-templates/panel.php:206
-#: includes/elements/section.php:285 includes/elements/section.php:336
-#: includes/elements/section.php:385 includes/elements/section.php:449
-#: includes/elements/section.php:477 includes/elements/section.php:513
-#: includes/elements/column.php:166 includes/elements/column.php:194
-#: includes/elements/column.php:234 includes/base/widget-base.php:247
-#: includes/settings/settings.php:511 core/experiments/manager.php:271
+#: includes/controls/groups/typography.php:176
+#: includes/editor-templates/panel.php:206 includes/elements/section.php:285
+#: includes/elements/section.php:336 includes/elements/section.php:385
+#: includes/elements/section.php:449 includes/elements/section.php:477
+#: includes/elements/section.php:513 includes/elements/column.php:166
+#: includes/elements/column.php:194 includes/elements/column.php:234
+#: includes/widgets/button.php:123 includes/widgets/icon-box.php:111
+#: includes/widgets/icon.php:126 includes/widgets/text-editor.php:131
+#: includes/widgets/text-editor.php:266 includes/widgets/image-gallery.php:146
+#: includes/widgets/image-gallery.php:162
+#: includes/widgets/image-gallery.php:194 includes/widgets/common.php:668
+#: includes/widgets/common.php:769 includes/widgets/progress.php:113
+#: includes/widgets/heading.php:143 includes/widgets/divider.php:793
+#: includes/widgets/image-carousel.php:122
+#: includes/widgets/image-carousel.php:135
+#: includes/widgets/image-carousel.php:207
+#: includes/widgets/image-carousel.php:552 includes/widgets/icon-list.php:100
+#: includes/widgets/image.php:223 includes/widgets/image.php:362
 #: assets/js/editor.js:33628 assets/js/editor.js:33640
 msgid "Default"
 msgstr "デフォルト"
 
-#: modules/gutenberg/module.php:100 modules/gutenberg/module.php:110
-#: modules/admin-bar/module.php:119 core/admin/admin.php:155
-#: core/admin/admin.php:163 core/base/document.php:473
+#: core/base/document.php:473 core/admin/admin.php:155 core/admin/admin.php:163
+#: modules/admin-bar/module.php:119 modules/gutenberg/module.php:100
+#: modules/gutenberg/module.php:110
 msgid "Edit with Elementor"
 msgstr "Elementor で編集"
 
